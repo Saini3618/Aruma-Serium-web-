@@ -326,10 +326,11 @@
           <div class="image-frame-overlay"></div>
           <div class="corner-tl"></div>
           <div class="corner-br"></div>
-          <div class="absolute bottom-8 -right-8 p-5 shadow-lg floating-badge"
-            style="background:rgba(250,247,242,0.95);border:1px solid rgba(200,151,58,0.22);backdrop-filter:blur(10px)">
+          <div class="absolute bottom-6 right-6 p-5 shadow-[0_20px_40px_rgba(200,151,58,0.15)] floating-badge"
+            style="background: linear-gradient(135deg, rgba(30, 26, 20, 0.95), rgba(20, 15, 12, 0.98)); border: 1px solid rgba(200,151,58,0.4); backdrop-filter: blur(12px); box-shadow: inset 0 0 20px rgba(200,151,58,0.05);">
             <p class="font-serif text-3xl font-light text-gold-400">15+</p>
-            <p class="text-[10px] tracking-widest uppercase mt-1" style="color:rgba(42,33,24,0.45)">Years of Mastery</p>
+            <p class="text-[10px] tracking-widest uppercase mt-1" style="color: rgba(200,151,58,0.75);">Years of Mastery
+            </p>
           </div>
         </div>
       </div>
@@ -565,8 +566,12 @@
   </section>
 
   <!-- ═══════════════════ FEATURES ═══════════════════ -->
-  <section class="py-20 px-8 relative overflow-hidden" style="background:var(--bg-0)">
-    <div class="max-w-screen-xl mx-auto">
+  <section class="py-20 px-8 relative overflow-hidden"
+    style="background:linear-gradient(to bottom, var(--bg-0), var(--bg-1))">
+    <div class="abs-orb"
+      style="top:0;right:10%;width:500px;height:500px;background:rgba(200,151,58,0.06);transform:translateY(-50%)">
+    </div>
+    <div class="max-w-screen-xl mx-auto relative z-10">
       <div class="text-center mb-14 reveal-up">
         <div class="flex items-center justify-center gap-4 mb-5">
           <div class="h-px w-10" style="background:rgba(200,151,58,0.40)"></div>
@@ -578,24 +583,32 @@
       </div>
       <div class="features-grid">
         <div class="feature-box reveal-up" style="animation-delay:0.05s">
-          <div class="feature-icon">🌿</div>
-          <h4 class="feature-title">100% Natural</h4>
-          <p class="feature-desc">Only the purest botanical oils — no synthetic fragrances, no fillers.</p>
+          <div class="content-wrapper">
+            <div class="feature-icon">🌿</div>
+            <h4 class="feature-title">100% Natural</h4>
+            <p class="feature-desc">Only the purest botanical oils — no synthetic fragrances, no fillers.</p>
+          </div>
         </div>
         <div class="feature-box reveal-up" style="animation-delay:0.10s">
-          <div class="feature-icon">✨</div>
-          <h4 class="feature-title">Long Lasting</h4>
-          <p class="feature-desc">Concentrated formulas that linger on your skin for 8–12 hours.</p>
+          <div class="content-wrapper">
+            <div class="feature-icon">✨</div>
+            <h4 class="feature-title">Long Lasting</h4>
+            <p class="feature-desc">Concentrated formulas that linger on your skin for 8–12 hours.</p>
+          </div>
         </div>
         <div class="feature-box reveal-up" style="animation-delay:0.15s">
-          <div class="feature-icon">🐇</div>
-          <h4 class="feature-title">Cruelty Free</h4>
-          <p class="feature-desc">Never tested on animals. Our ethics are as premium as our scent.</p>
+          <div class="content-wrapper">
+            <div class="feature-icon">🐇</div>
+            <h4 class="feature-title">Cruelty Free</h4>
+            <p class="feature-desc">Never tested on animals. Our ethics are as premium as our scent.</p>
+          </div>
         </div>
         <div class="feature-box reveal-up" style="animation-delay:0.20s">
-          <div class="feature-icon">🇫🇷</div>
-          <h4 class="feature-title">Paris Inspired</h4>
-          <p class="feature-desc">Every formula honors the grand tradition of Parisian perfumery.</p>
+          <div class="content-wrapper">
+            <div class="feature-icon">🇫🇷</div>
+            <h4 class="feature-title">Paris Inspired</h4>
+            <p class="feature-desc">Every formula honors the grand tradition of Parisian perfumery.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -624,10 +637,12 @@
             <div class="image-frame-overlay"></div>
             <div class="corner-tl"></div>
             <div class="corner-br"></div>
-            <div class="absolute bottom-8 left-8 right-8 p-5"
-              style="background:rgba(250,247,242,0.88);border:1px solid rgba(200,151,58,0.25);backdrop-filter:blur(10px)">
-              <p class="font-serif italic text-gold-500 text-lg">"In every drop, a story of the earth."</p>
-              <p class="text-[10px] tracking-widest uppercase mt-2" style="color:rgba(42,33,24,0.35)">— Amor Exotic</p>
+            <div class="absolute bottom-8 left-8 right-8 p-5 shadow-2xl"
+              style="background:rgba(20,16,12,0.75);border:1px solid rgba(200,151,58,0.4);backdrop-filter:blur(12px)">
+              <p class="font-serif italic text-gold-400 text-lg drop-shadow-md">"In every drop, a story of the earth."
+              </p>
+              <p class="text-[10px] tracking-widest uppercase mt-2" style="color:rgba(255,255,255,0.6)">— Amor Exotic
+              </p>
             </div>
           </div>
         </div>
@@ -679,98 +694,119 @@
   </section>
 
   <!-- ═══════════════════ GALLERY ═══════════════════ -->
-  <section class="py-20 px-8 relative overflow-hidden" style="background:var(--dark-0)">
-    <div class="abs-orb"
-      style="top:50%;left:50%;width:600px;height:600px;background:rgba(200,151,58,0.04);transform:translate(-50%,-50%)">
+  <section class="py-24 px-8 relative overflow-hidden"
+    style="background: linear-gradient(135deg, #fefdf9 0%, #f6f1e6 50%, #eee6d6 100%);">
+
+    <!-- Unique light luxury texture overlay -->
+    <div class="absolute inset-0"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23c8973a\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); opacity: 0.8;">
     </div>
+
+    <!-- Soft illuminating orbs -->
+    <div class="abs-orb"
+      style="top:-10%;left:-10%;width:800px;height:800px;background:radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);">
+    </div>
+    <div class="abs-orb"
+      style="bottom:-20%;right:-10%;width:1000px;height:1000px;background:radial-gradient(circle, rgba(200,151,58,0.1) 0%, transparent 60%);">
+    </div>
+
+    <!-- Additional center spotlight glow -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[600px] pointer-events-none"
+      style="background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 100%);"></div>
+
     <div class="max-w-screen-xl mx-auto relative z-10">
-      <div class="text-center mb-14 reveal-up">
+      <div class="text-center mb-16 reveal-up">
         <div class="flex items-center justify-center gap-4 mb-5">
-          <div class="h-px w-14" style="background:rgba(200,151,58,0.38)"></div>
-          <p class="text-[9px] tracking-[0.6em] uppercase text-gold-400">Visual World</p>
-          <div class="h-px w-14" style="background:rgba(200,151,58,0.38)"></div>
+          <div class="h-px w-14" style="background:rgba(200,151,58,0.45)"></div>
+          <p class="text-[9px] tracking-[0.6em] uppercase text-gold-400 font-medium">Visual World</p>
+          <div class="h-px w-14" style="background:rgba(200,151,58,0.45)"></div>
         </div>
-        <h2 class="font-serif font-light text-white" style="font-size:clamp(2.5rem,5vw,3.8rem)">The <em
-            class="text-gold-400">Gallery</em></h2>
-        <p class="text-[10px] tracking-widest mt-3 uppercase" style="color:rgba(255,255,255,0.22)">Hover to explore each
-          scent's world</p>
+        <h2 class="font-serif font-light" style="font-size:clamp(3rem,6vw,4.5rem); color: var(--text);">
+          The <em class="text-gold-400">Gallery</em>
+        </h2>
+        <p class="text-[10px] tracking-widest mt-4 uppercase" style="color:var(--text-35)">Hover to explore each scent's
+          world</p>
       </div>
-      <div class="gallery-premium-grid">
-        <div class="gal-premium-item gal-tall reveal-up" style="animation-delay:0s">
-          <img src="images/gallery_floral_hero.png" alt="Floral Fresh" class="gal-premium-img" />
-          <div class="gal-premium-dark"></div>
-          <div class="gal-shimmer"></div>
-          <div class="gal-glow"></div>
-          <div class="gal-premium-overlay">
-            <div class="gal-premium-content">
-              <p class="gal-premium-cat">Floral Collection</p>
-              <h4 class="gal-premium-title">Floral Fresh Aroma</h4>
-              <div class="gal-premium-line"></div>
-              <p class="gal-premium-sub">15ML · ₹799</p>
+
+      <div class="gallery-premium-wrapper relative mx-auto" style="max-width: 100%;">
+        <div class="gallery-premium-grid">
+          <div class="gal-premium-item gal-tall reveal-up" style="animation-delay:0s">
+            <img src="images/gallery_floral_hero.png" alt="Floral Fresh" class="gal-premium-img" />
+            <div class="gal-premium-dark"></div>
+            <div class="gal-shimmer"></div>
+            <div class="gal-glow"></div>
+            <div class="gal-premium-overlay">
+              <div class="gal-premium-content">
+                <p class="gal-premium-cat">Floral Collection</p>
+                <h4 class="gal-premium-title">Floral Fresh Aroma</h4>
+                <div class="gal-premium-line"></div>
+                <p class="gal-premium-sub">15ML · ₹799</p>
+              </div>
             </div>
+            <div class="gal-premium-border"></div>
           </div>
-          <div class="gal-premium-border"></div>
-        </div>
-        <div class="gal-premium-item reveal-up" style="animation-delay:0.08s">
-          <img src="images/ChatGPT Image Mar 14, 2026, 04_36_37 PM.png" alt="Floral Atmospheric"
-            class="gal-premium-img object-top" />
-          <div class="gal-premium-dark"></div>
-          <div class="gal-shimmer"></div>
-          <div class="gal-glow"></div>
-          <div class="gal-premium-overlay">
-            <div class="gal-premium-content">
-              <p class="gal-premium-cat">Floral Collection</p>
-              <h4 class="gal-premium-title">Floral Fresh — Atmospheric</h4>
-              <div class="gal-premium-line"></div>
-              <p class="gal-premium-sub">Dark · Captivating</p>
+          <div class="gal-premium-item reveal-up" style="animation-delay:0.08s">
+            <img src="images/ChatGPT Image Mar 14, 2026, 04_36_37 PM.png" alt="Floral Atmospheric"
+              class="gal-premium-img object-top" />
+            <div class="gal-premium-dark"></div>
+            <div class="gal-shimmer"></div>
+            <div class="gal-glow"></div>
+            <div class="gal-premium-overlay">
+              <div class="gal-premium-content">
+                <p class="gal-premium-cat">Floral Collection</p>
+                <h4 class="gal-premium-title">Floral Fresh — Atmospheric</h4>
+                <div class="gal-premium-line"></div>
+                <p class="gal-premium-sub">Dark · Captivating</p>
+              </div>
             </div>
+            <div class="gal-premium-border"></div>
           </div>
-          <div class="gal-premium-border"></div>
-        </div>
-        <div class="gal-premium-item reveal-up" style="animation-delay:0.12s">
-          <img src="images/black_oudh_dark.png" alt="Black Oudh" class="gal-premium-img" />
-          <div class="gal-premium-dark"></div>
-          <div class="gal-shimmer"></div>
-          <div class="gal-glow"></div>
-          <div class="gal-premium-overlay">
-            <div class="gal-premium-content">
-              <p class="gal-premium-cat">Oriental · Signature</p>
-              <h4 class="gal-premium-title">Black Oudh Aroma</h4>
-              <div class="gal-premium-line"></div>
-              <p class="gal-premium-sub">30ML · ₹1,499</p>
+          <div class="gal-premium-item reveal-up" style="animation-delay:0.12s">
+            <img src="images/black_oudh_dark.png" alt="Black Oudh" class="gal-premium-img" />
+            <div class="gal-premium-dark"></div>
+            <div class="gal-shimmer"></div>
+            <div class="gal-glow"></div>
+            <div class="gal-premium-overlay">
+              <div class="gal-premium-content">
+                <p class="gal-premium-cat">Oriental · Signature</p>
+                <h4 class="gal-premium-title">Black Oudh Aroma</h4>
+                <div class="gal-premium-line"></div>
+                <p class="gal-premium-sub">30ML · ₹1,499</p>
+              </div>
             </div>
+            <div class="gal-premium-border"></div>
           </div>
-          <div class="gal-premium-border"></div>
-        </div>
-        <div class="gal-premium-item reveal-up" style="animation-delay:0.16s">
-          <img src="images/ocean_breeze.png" alt="Ocean Breeze" class="gal-premium-img" />
-          <div class="gal-premium-dark"></div>
-          <div class="gal-shimmer"></div>
-          <div class="gal-glow"></div>
-          <div class="gal-premium-overlay">
-            <div class="gal-premium-content">
-              <p class="gal-premium-cat">Fresh Collection</p>
-              <h4 class="gal-premium-title">Ocean Breeze Aroma</h4>
-              <div class="gal-premium-line"></div>
-              <p class="gal-premium-sub">30ML · ₹1,099</p>
+          <div class="gal-premium-item reveal-up" style="animation-delay:0.16s">
+            <img src="images/ocean_breeze.png" alt="Ocean Breeze" class="gal-premium-img" />
+            <div class="gal-premium-dark"></div>
+            <div class="gal-shimmer"></div>
+            <div class="gal-glow"></div>
+            <div class="gal-premium-overlay">
+              <div class="gal-premium-content">
+                <p class="gal-premium-cat">Fresh Collection</p>
+                <h4 class="gal-premium-title">Ocean Breeze Aroma</h4>
+                <div class="gal-premium-line"></div>
+                <p class="gal-premium-sub">30ML · ₹1,099</p>
+              </div>
             </div>
+            <div class="gal-premium-border"></div>
           </div>
-          <div class="gal-premium-border"></div>
-        </div>
-        <div class="gal-premium-item reveal-up" style="animation-delay:0.20s">
-          <img src="images/gallery_floral_marble.png" alt="Serium Luxury" class="gal-premium-img" />
-          <div class="gal-premium-dark"></div>
-          <div class="gal-shimmer"></div>
-          <div class="gal-glow"></div>
-          <div class="gal-premium-overlay">
-            <div class="gal-premium-content">
-              <p class="gal-premium-cat">Amor Exotic · Paris</p>
-              <h4 class="gal-premium-title">The Art of Serium</h4>
-              <div class="gal-premium-line"></div>
-              <p class="gal-premium-sub">Luxury · Timeless</p>
+          <div class="gal-premium-item reveal-up" style="animation-delay:0.20s">
+            <img src="images/gallery_floral_marble.png" alt="Serium Luxury" class="gal-premium-img" />
+            <div class="gal-premium-dark"></div>
+            <div class="gal-shimmer"></div>
+            <div class="gal-glow"></div>
+            <div class="gal-premium-overlay">
+              <div class="gal-premium-content">
+                <p class="gal-premium-cat">Amor Exotic · Paris</p>
+                <h4 class="gal-premium-title">The Art of Serium</h4>
+                <div class="gal-premium-line"></div>
+                <p class="gal-premium-sub">Luxury · Timeless</p>
+              </div>
             </div>
+            <div class="gal-premium-border"></div>
           </div>
-          <div class="gal-premium-border"></div>
         </div>
       </div>
     </div>
@@ -830,82 +866,163 @@
   </section>
 
   <!-- ═══════════════════ CONTACT ═══════════════════ -->
-  <section id="contact" class="relative py-24 px-8 overflow-hidden" style="background:var(--dark-1)">
-    <div class="absolute inset-0">
-      <img src="images/products.png" alt="" class="w-full h-full object-cover" style="opacity:0.08" />
-      <div class="absolute inset-0"
-        style="background:linear-gradient(to bottom,var(--dark-1),rgba(35,30,23,0.85),var(--dark-1))"></div>
+  <section id="contact" class="relative py-32 px-8 overflow-hidden"
+    style="background: radial-gradient(circle at 50% 50%, #fcf9f2 0%, #ebe2ce 100%);">
+
+    <!-- Ultra premium light overlay -->
+    <div class="absolute inset-0"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100\' height=\'100\' filter=\'url(%23noise)\' opacity=\'0.02\'/%3E%3C/svg%3E'); z-index: 1; pointer-events: none;">
     </div>
-    <div class="abs-orb inset-center animate-pulse-glow"
-      style="width:700px;height:700px;background:rgba(200,151,58,0.05)"></div>
-    <div class="relative z-10 max-w-2xl mx-auto text-center">
-      <div class="flex items-center justify-center gap-4 mb-6 reveal-up">
-        <div class="h-px w-14" style="background:rgba(200,151,58,0.38)"></div>
-        <p class="text-[9px] tracking-[0.6em] uppercase text-gold-400">Begin Your Journey</p>
-        <div class="h-px w-14" style="background:rgba(200,151,58,0.38)"></div>
+
+    <!-- Subtle glow behind the main text -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px]"
+      style="background: radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,0.8) 0%, transparent 100%); z-index: 2; pointer-events: none;">
+    </div>
+
+    <div class="relative z-10 max-w-3xl mx-auto text-center">
+      <div class="flex items-center justify-center gap-6 mb-12 reveal-up">
+        <div class="h-px w-10" style="background:rgba(189,157,99,0.4)"></div>
+        <p class="text-[9.5px] tracking-[0.45em] uppercase font-medium" style="color: #bc9e65;">Begin Your Journey</p>
+        <div class="h-px w-10" style="background:rgba(189,157,99,0.4)"></div>
       </div>
-      <h2 class="font-serif font-light text-white leading-tight mb-8 reveal-up"
-        style="font-size:clamp(2.5rem,7vw,5rem);animation-delay:0.1s">
-        Wear the <em class="text-gold-400">World's</em><br />Finest Scents
-      </h2>
-      <p class="text-sm leading-relaxed mb-12 max-w-md mx-auto reveal-up font-light"
-        style="color:rgba(255,255,255,0.38);animation-delay:0.2s">
-        Join thousands who have discovered the transformative power of Amor Exotic. Be the first to know about new
-        launches and exclusive offers.
+
+      <div class="relative inline-block text-left mb-8">
+        <h2 class="font-serif font-light leading-[1.3] text-center reveal-up"
+          style="font-size:clamp(3.5rem,7vw,5.5rem); color: #332d26; position: relative; z-index: 3;">
+          Wear the <em style="color: #bc9e65; font-style: italic;">World's</em><br />Finest Scents
+        </h2>
+      </div>
+
+      <p class="text-[12px] leading-[1.8] mb-14 max-w-md mx-auto reveal-up font-light"
+        style="color: rgba(51, 45, 38, 0.55); animation-delay:0.1s; letter-spacing: 0.02em;">
+        Join thousands who have discovered the transformative power<br />
+        of Amor Exotic. Be the first to know about new launches and<br />
+        exclusive offers.
       </p>
-      <div class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto reveal-up" style="animation-delay:0.3s">
-        <input id="sub-email" type="email" placeholder="Your email address" class="sub-input" />
-        <button id="sub-btn" class="sub-btn">Subscribe</button>
+
+      <!-- Exact Pill Shape Form Layout -->
+      <div class="reveal-up mx-auto relative group" style="animation-delay:0.2s; max-width: 480px;">
+        <!-- Glowing shadow behind form -->
+        <div
+          class="absolute inset-0 bg-white rounded-full opacity-60 blur-md transition-all duration-500 group-hover:opacity-100 group-hover:blur-xl"
+          style="z-index: 0;"></div>
+
+        <div class="relative flex items-center"
+          style="background: #ffffff; border-radius: 50px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.04), 0 5px 15px rgba(0,0,0,0.02); z-index: 5; border: 1px solid rgba(255,255,255,0.8);">
+
+          <input id="sub-email" type="email" placeholder="Your email address"
+            class="flex-1 bg-transparent border-none outline-none font-light"
+            style="padding: 24px 34px; color: #332d26; font-size: 11px; letter-spacing: 0.15em; font-family: 'Montserrat', sans-serif;" />
+
+          <button id="sub-btn" class="transition-all duration-500 ease-out hover:brightness-110"
+            style="background: #be9d5c; color: #fff; border: none; padding: 24px 45px; font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; font-weight: 500; font-family: 'Montserrat', sans-serif; cursor: none;">
+            Subscribe
+          </button>
+        </div>
       </div>
-      <p class="text-[10px] tracking-wider mt-4 reveal-up" style="color:rgba(255,255,255,0.18);animation-delay:0.4s">No
-        spam. Pure luxury, delivered to your inbox.</p>
+
+      <p class="text-[8.5px] tracking-[0.25em] mt-8 reveal-up font-light"
+        style="color: rgba(51, 45, 38, 0.35); animation-delay:0.3s; text-transform: uppercase;">
+        No spam. Pure luxury, delivered to your inbox.
+      </p>
     </div>
   </section>
 
-  <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer style="background:var(--dark-0);border-top:1px solid rgba(255,255,255,0.05)" class="pt-20 pb-8 px-8">
-    <div class="max-w-screen-xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-16">
+  <!-- ═══════════════════ FOOTER (ULTRA PRO MAX LUXURY) ═══════════════════ -->
+  <footer class="relative pt-16 pb-6 px-8 overflow-hidden"
+    style="background: rgba(250, 247, 242, 0.95); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-top: 1px solid rgba(178, 168, 148, 0.25);">
+
+    <!-- Subtle Animated Background Glow -->
+    <div class="absolute inset-x-0 bottom-0 h-[250px] pointer-events-none"
+      style="background: radial-gradient(ellipse at bottom, rgba(200,151,58,0.06) 0%, transparent 80%);"></div>
+
+    <div class="max-w-screen-xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10 reveal-up">
+
+        <!-- Brand Info -->
         <div class="md:col-span-5 space-y-6">
           <div>
             <a href="#hero"
-              class="font-serif text-4xl tracking-[0.5em] text-gold-400 uppercase font-light block">SERIUM</a>
-            <p class="text-[10px] tracking-[0.4em] uppercase mt-1" style="color:rgba(255,255,255,0.22)">Amor Exotic ·
-              Aroma of Paris</p>
+              class="font-serif text-5xl tracking-[0.4em] text-gold-400 uppercase font-light block transition-transform duration-700 hover:scale-105 origin-left">
+              SERIUM
+            </a>
+            <p class="text-[9px] tracking-[0.5em] uppercase mt-3 font-medium" style="color: var(--text-50);">
+              Amor Exotic · Aroma of Paris
+            </p>
           </div>
-          <p class="text-sm leading-relaxed font-light max-w-xs" style="color:rgba(255,255,255,0.32)">
+          <p class="text-[13px] leading-[1.9] font-light max-w-sm" style="color: var(--text-70);">
             The pinnacle of aroma artistry. Crafted for those who believe that the finest luxury is the one you wear on
             your skin.
           </p>
-          <div class="flex gap-3">
-            <a href="#" class="social-icon">in</a>
-            <a href="#" class="social-icon">ig</a>
-            <a href="#" class="social-icon">𝕏</a>
-            <a href="#" class="social-icon">yt</a>
+          <div class="flex gap-4 pt-2">
+            <a href="#"
+              class="w-10 h-10 rounded-full border flex items-center justify-center text-[11px] transition-all duration-500 hover:-translate-y-2 hover:bg-[#c8973a] hover:text-white hover:border-[#c8973a] hover:shadow-[0_10px_20px_rgba(200,151,58,0.3)]"
+              style="border-color: rgba(200,151,58,0.3); color: var(--text-70);">in</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full border flex items-center justify-center text-[11px] transition-all duration-500 hover:-translate-y-2 hover:bg-[#c8973a] hover:text-white hover:border-[#c8973a] hover:shadow-[0_10px_20px_rgba(200,151,58,0.3)]"
+              style="border-color: rgba(200,151,58,0.3); color: var(--text-70);">ig</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full border flex items-center justify-center text-[11px] transition-all duration-500 hover:-translate-y-2 hover:bg-[#c8973a] hover:text-white hover:border-[#c8973a] hover:shadow-[0_10px_20px_rgba(200,151,58,0.3)]"
+              style="border-color: rgba(200,151,58,0.3); color: var(--text-70);">𝕏</a>
+            <a href="#"
+              class="w-10 h-10 rounded-full border flex items-center justify-center text-[11px] transition-all duration-500 hover:-translate-y-2 hover:bg-[#c8973a] hover:text-white hover:border-[#c8973a] hover:shadow-[0_10px_20px_rgba(200,151,58,0.3)]"
+              style="border-color: rgba(200,151,58,0.3); color: var(--text-70);">yt</a>
           </div>
         </div>
-        <div class="md:col-span-3 space-y-3">
-          <h4 class="footer-heading">Collection</h4>
-          <a href="#collection" class="footer-link">🌸 Floral Fresh Aroma</a>
-          <a href="#collection" class="footer-link">🌊 Ocean Breeze</a>
-          <a href="#collection" class="footer-link">🍊 Fruity Exotica</a>
-          <a href="#collection" class="footer-link">💧 Aqua Aroma</a>
-          <a href="#collection" class="footer-link">🖤 Black Oudh Aroma</a>
+
+        <!-- Collection Links -->
+        <div class="md:col-span-3 space-y-5 lg:ml-8">
+          <h4 class="text-[9.5px] tracking-[0.4em] uppercase font-semibold mb-6" style="color: var(--text);">Collection
+          </h4>
+          <a href="#collection"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">🌸 Floral Fresh Aroma</a>
+          <a href="#collection"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">🌊 Ocean Breeze</a>
+          <a href="#collection"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">🍊 Fruity Exotica</a>
+          <a href="#collection"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">💧 Aqua Aroma</a>
+          <a href="#collection"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">🖤 Black Oudh Aroma</a>
         </div>
-        <div class="md:col-span-4 space-y-3">
-          <h4 class="footer-heading">Company</h4>
-          <a href="#about" class="footer-link">Our Story</a>
-          <a href="#ingredients" class="footer-link">Ingredients</a>
-          <a href="#contact" class="footer-link">Contact Us</a>
-          <a href="#" class="footer-link">Shipping & Returns</a>
-          <a href="#" class="footer-link">Privacy Policy</a>
+
+        <!-- Company Links -->
+        <div class="md:col-span-4 space-y-5 lg:ml-auto">
+          <h4 class="text-[9.5px] tracking-[0.4em] uppercase font-semibold mb-6" style="color: var(--text);">Company
+          </h4>
+          <a href="#about"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">Our Story</a>
+          <a href="#ingredients"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">Ingredients</a>
+          <a href="#contact"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">Contact Us</a>
+          <a href="#"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">Shipping & Returns</a>
+          <a href="#"
+            class="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
+            style="color: var(--text-70);">Privacy Policy</a>
         </div>
+
       </div>
-      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
-        style="border-top:1px solid rgba(255,255,255,0.05)">
-        <p class="text-xs tracking-wider" style="color:rgba(255,255,255,0.14)">© 2026 SERIUM · Amor Exotic. All rights
-          reserved.</p>
-        <p class="font-serif italic text-sm" style="color:rgba(255,255,255,0.14)">Where Scent Becomes Soul</p>
+
+      <!-- Footer Bottom -->
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-6"
+        style="border-top: 1px solid rgba(178, 168, 148, 0.25); animation-delay: 0.2s;">
+        <p class="text-[10px] tracking-widest uppercase font-medium" style="color: var(--text-35);">
+          © 2026 SERIUM · Amor Exotic. All rights reserved.
+        </p>
+        <p class="font-serif italic text-[15px]" style="color: var(--text-50);">
+          Where Scent Becomes Soul
+        </p>
       </div>
     </div>
   </footer>

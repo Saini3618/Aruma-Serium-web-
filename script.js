@@ -63,21 +63,32 @@ document.addEventListener('DOMContentLoaded', () => {
   menuClose?.addEventListener('click', closeMenu);
   mobileMenu?.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenu));
 
-  /* ========== PARALLAX HERO ========== */
+  /* ========== ULTRA PREMIUM PARALLAX HERO ========== */
   const heroImg = document.querySelector('.parallax-img');
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        const sy = window.scrollY;
-        if (heroImg && sy < window.innerHeight * 1.2) {
-          heroImg.style.transform = `translateY(${sy * 0.3}px) scale(1.06)`;
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
+  let currentY = 0;
+  let targetY = 0;
+  
+  if (heroImg) {
+    const lerp = (start, end, factor) => start + (end - start) * factor;
+    
+    const animateParallax = () => {
+      targetY = window.scrollY;
+      
+      // Interpolate for buttery smooth lag
+      currentY = lerp(currentY, targetY, 0.08);
+      
+      // Only animate if hero is in view
+      if (currentY < window.innerHeight * 1.5) {
+        // High-end scale and translate matrix
+        heroImg.style.transform = `translate3d(0, ${currentY * 0.35}px, 0) scale(${1.05 + currentY * 0.0001})`;
+      }
+      
+      requestAnimationFrame(animateParallax);
+    };
+    
+    // Start the loop
+    requestAnimationFrame(animateParallax);
+  }
 
   /* ========== SCROLL REVEAL ========== */
   const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
