@@ -1,3 +1,5 @@
+
+
 /* ==============================================
    SERIUM · Script.js — Dynamic Interactions
    ============================================== */
@@ -37,10 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
       el.addEventListener('mouseleave', () => { cursor.classList.remove('expand'); follower.classList.remove('hide'); });
     });
 
-  /* ========== NAVBAR ========== */
+  /* ========== NAVBAR & SCROLL PROGRESS ========== */
   const navbar = document.getElementById('navbar');
+  const scrollProgress = document.getElementById('scroll-progress');
   const onScroll = () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    const sy = window.scrollY;
+    navbar.classList.toggle('scrolled', sy > 60);
+
+    // Update scroll progress bar
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (sy / height) * 100;
+    if (scrollProgress) scrollProgress.style.width = scrolled + '%';
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -249,3 +258,4 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('%c✦ SERIUM · AMOR EXOTIC ✦', 'color:#d4a842;font-size:18px;font-family:serif;font-style:italic');
   console.log('%cAroma of Paris — Where Scent Becomes Soul', 'color:#8c6410;font-size:11px');
 });
+
