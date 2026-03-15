@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulk Orders - SERIUM | Amor Exotic</title>
+  <meta name="description"
+    content="SERIUM bulk orders for retailers, gifting partners, event planners, and businesses. Enquire on WhatsApp for wholesale pricing and custom packaging." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 100: '#f9efd8', 200: '#ead8ad', 300: '#d4af37', 400: '#c5a059', 500: '#b8860b', 600: '#9a6f08' },
+            dark: { 950: '#fafafa', 900: '#ffffff', 800: '#f9f9f4', 700: '#f5f5f0', 600: '#ecece6', 500: '#e5e5e5' }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-[#1A1A1A] font-sans overflow-x-hidden">
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <div id="loader" class="fixed inset-0 z-[9999] bg-[#FAFAFA] flex flex-col items-center justify-center">
+    <div class="loader-ring"></div>
+    <p class="font-serif text-gold-400 text-2xl tracking-[0.6em] uppercase mt-8 animate-pulse">SERIUM</p>
+    <p class="text-[#707070] text-[10px] tracking-[0.4em] uppercase mt-2">Amor Exotic · Aroma of Paris</p>
+  </div>
+
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+    <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+      <a href="index.html#hero" class="flex flex-col leading-none">
+        <span class="font-serif text-2xl font-light tracking-[0.5em] text-gold-400 uppercase">SERIUM</span>
+        <span class="text-[8px] tracking-[0.4em] text-[#707070] uppercase mt-0.5">Amor Exotic · Paris</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-10">
+        <a href="index.html#about" class="nav-link">Our Story</a>
+        <a href="index.html#collection" class="nav-link">Collection</a>
+        <a href="index.html#products" class="nav-link">Products</a>
+        <a href="index.html#ingredients" class="nav-link">Ingredients</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="#bulk-products" class="nav-link active">Bulk Orders</a>
+      </div>
+      <a href="#bulk-products"
+        class="hidden lg:flex items-center gap-2 border border-gold-400/50 text-gold-400 text-[10px] tracking-[0.3em] uppercase px-6 py-3 hover:bg-gold-400 hover:text-[#1A1A1A] transition-all duration-300 font-medium group">
+        <span>Bulk Enquiry</span>
+        <svg class="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-gold-400">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu"
+    class="fixed inset-0 z-40 bg-white/95 backdrop-blur-2xl flex-col items-center justify-center gap-8 hidden">
+    <button id="menu-close" class="absolute top-6 right-8 text-gold-400 text-3xl leading-none">&times;</button>
+    <a href="index.html#about"
+      class="mobile-link font-serif text-3xl text-[#1A1A1A]/80 hover:text-gold-400 tracking-widest transition-colors">Story</a>
+    <a href="index.html#collection"
+      class="mobile-link font-serif text-3xl text-[#1A1A1A]/80 hover:text-gold-400 tracking-widest transition-colors">Collection</a>
+    <a href="index.html#products"
+      class="mobile-link font-serif text-3xl text-[#1A1A1A]/80 hover:text-gold-400 tracking-widest transition-colors">Products</a>
+    <a href="index.html#ingredients"
+      class="mobile-link font-serif text-3xl text-[#1A1A1A]/80 hover:text-gold-400 tracking-widest transition-colors">Ingredients</a>
+    <a href="index.html#contact"
+      class="mobile-link font-serif text-3xl text-[#1A1A1A]/80 hover:text-gold-400 tracking-widest transition-colors">Contact</a>
+    <a href="#bulk-products"
+      class="mobile-link font-serif text-3xl text-gold-400 tracking-widest transition-colors">Bulk Orders</a>
+  </div>
+
+  <section class="bulk-hero relative pt-44 pb-24 px-8 overflow-hidden">
+    <div class="abs-orb top-0 right-0 w-[560px] h-[560px] bg-gold-400/8 translate-x-1/3 -translate-y-1/3"></div>
+    <div class="abs-orb bottom-0 left-0 w-[460px] h-[460px] bg-gold-500/6 -translate-x-1/3 translate-y-1/3"></div>
+
+    <div class="max-w-screen-xl mx-auto relative z-10">
+      <div class="bulk-hero-panel reveal-up">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="h-px w-12 bg-gold-400/70"></div>
+          <p class="text-[10px] tracking-[0.6em] uppercase text-gold-400">B2B Enquiries</p>
+        </div>
+
+        <h1 class="font-serif font-light text-5xl md:text-6xl xl:text-7xl leading-[1.05]">
+          Bulk <em class="text-gold-400">Orders</em>
+        </h1>
+
+        <p class="text-[#E4DED1] mt-7 text-sm md:text-base leading-loose max-w-2xl">
+          For businesses, retailers, gifting partners, event organizers, and hospitality teams. Share your quantity
+          requirement and preferred variants - our team will craft a custom bulk quotation for you.
+        </p>
+
+        <div class="flex flex-wrap gap-3 mt-8">
+          <span class="bulk-chip">Retail Supply</span>
+          <span class="bulk-chip">Wedding Gifting</span>
+          <span class="bulk-chip">Corporate Hampers</span>
+          <span class="bulk-chip">Event Fulfillment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bulk-products" class="py-24 px-8 bg-[#F9F9F4] relative overflow-hidden">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="text-center mb-14 reveal-up">
+        <div class="flex items-center justify-center gap-4 mb-5">
+          <div class="h-px w-14 bg-gold-400/40"></div>
+          <p class="text-[10px] tracking-[0.6em] uppercase text-gold-400">Bulk Catalogue</p>
+          <div class="h-px w-14 bg-gold-400/40"></div>
+        </div>
+        <h2 class="font-serif font-light text-5xl xl:text-6xl">Available <em class="text-gold-400">Aromas</em></h2>
+      </div>
+
+      <div class="bulk-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="product-card bulk-product-card reveal-up" style="animation-delay:0.1s">
+          <div class="bulk-product-media">
+            <img src="images/ocean_breeze.png" alt="Ocean Breeze Aroma" class="bulk-product-img" />
+          </div>
+          <div class="product-info">
+            <p class="product-category">Fresh Collection</p>
+            <h3 class="product-name">Ocean Breeze Aroma</h3>
+            <p class="product-tagline">Cool marine freshness ideal for hotels, spas, and summer gifting kits.</p>
+            <p class="bulk-variants-title">Available Variants</p>
+            <ul class="bulk-variants">
+              <li>15ML Counter Display</li>
+              <li>30ML Signature Bottle</li>
+              <li>Bulk Tester Packs</li>
+            </ul>
+            <a class="bulk-wa-btn" target="_blank" rel="noopener"
+              href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ocean%20Breeze%20Aroma">Enquire</a>
+          </div>
+        </article>
+
+        <article class="product-card bulk-product-card reveal-up" style="animation-delay:0.15s">
+          <div class="bulk-product-media">
+            <img src="images/black_oudh_dark.png" alt="Black Oudh Aroma" class="bulk-product-img" />
+          </div>
+          <div class="product-info">
+            <p class="product-category">Oriental Signature</p>
+            <h3 class="product-name">Black Oudh Aroma</h3>
+            <p class="product-tagline">Deep and bold oud profile for premium clientele and festive gift lines.</p>
+            <p class="bulk-variants-title">Available Variants</p>
+            <ul class="bulk-variants">
+              <li>30ML Luxury Bottle</li>
+              <li>Limited Edition Sleeve Pack</li>
+              <li>Premium Event Gift Set</li>
+            </ul>
+            <a class="bulk-wa-btn" target="_blank" rel="noopener"
+              href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma">Enquire</a>
+          </div>
+        </article>
+
+        <article class="product-card bulk-product-card reveal-up" style="animation-delay:0.2s">
+          <div class="bulk-product-media">
+            <img src="images/fruity_exotica.png" alt="Fruity Exotica Aroma" class="bulk-product-img" />
+          </div>
+          <div class="product-info">
+            <p class="product-category">Fruity Collection</p>
+            <h3 class="product-name">Fruity Exotica</h3>
+            <p class="product-tagline">Lively tropical profile that performs exceptionally in youth retail channels.</p>
+            <p class="bulk-variants-title">Available Variants</p>
+            <ul class="bulk-variants">
+              <li>15ML Intro Size</li>
+              <li>30ML Full Size</li>
+              <li>Festival Combo Pack</li>
+            </ul>
+            <a class="bulk-wa-btn" target="_blank" rel="noopener"
+              href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Fruity%20Exotica">Enquire</a>
+          </div>
+        </article>
+
+        <article class="product-card bulk-product-card reveal-up" style="animation-delay:0.25s">
+          <div class="bulk-product-media">
+            <img src="images/aqua_aroma.png" alt="Aqua Aroma" class="bulk-product-img" />
+          </div>
+          <div class="product-info">
+            <p class="product-category">Fresh Collection</p>
+            <h3 class="product-name">Aqua Aroma</h3>
+            <p class="product-tagline">Clean aquatic profile perfect for hotel amenities and long-term contracts.</p>
+            <p class="bulk-variants-title">Available Variants</p>
+            <ul class="bulk-variants">
+              <li>15ML Retail Pack</li>
+              <li>30ML Signature Pack</li>
+              <li>Private Label Bulk Fill</li>
+            </ul>
+            <a class="bulk-wa-btn" target="_blank" rel="noopener"
+              href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma">Enquire</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-8 relative overflow-hidden">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="text-center mb-14 reveal-up">
+        <div class="flex items-center justify-center gap-4 mb-5">
+          <div class="h-px w-10 bg-gold-400/40"></div>
+          <p class="text-[10px] tracking-[0.6em] uppercase text-gold-400">Bulk Order Benefits</p>
+          <div class="h-px w-10 bg-gold-400/40"></div>
+        </div>
+        <h2 class="font-serif font-light text-5xl">Built for <em class="text-gold-400">B2B Scale</em></h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="feature-box bulk-info-box reveal-up" style="animation-delay:0.05s">
+          <h3 class="bulk-info-title">Special Pricing</h3>
+          <p class="feature-desc">Tier-based pricing for larger volumes to maximize partner margins.</p>
+        </article>
+        <article class="feature-box bulk-info-box reveal-up" style="animation-delay:0.1s">
+          <h3 class="bulk-info-title">Custom Packaging</h3>
+          <p class="feature-desc">Gift-ready packs, event branding, and curated assortment bundles.</p>
+        </article>
+        <article class="feature-box bulk-info-box reveal-up" style="animation-delay:0.15s">
+          <h3 class="bulk-info-title">Delivery Support</h3>
+          <p class="feature-desc">Assisted logistics for pan-India deliveries, including scheduled dispatches.</p>
+        </article>
+        <article class="feature-box bulk-info-box reveal-up" style="animation-delay:0.2s">
+          <h3 class="bulk-info-title">Minimum Quantities</h3>
+          <p class="feature-desc">Bulk orders start from practical MOQs with scalable fulfillment options.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bulk-cta py-24 px-8 overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center reveal-up">
+      <p class="text-[10px] tracking-[0.55em] uppercase text-gold-300 mb-5">Ready for Bulk Deals</p>
+      <h2 class="font-serif font-light text-5xl xl:text-6xl text-[#F8F5EE] leading-tight">
+        Share Your Quantity and Timeline,<br />We Will Prepare a Priority Quote
+      </h2>
+      <p class="text-[#D8CFB9] text-sm leading-relaxed mt-7 max-w-2xl mx-auto">
+        Skip checkout flows and connect directly with our business team for volume pricing, lead times, and packaging customization.
+      </p>
+      <a href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20orders%20for%20SERIUM"
+        target="_blank" rel="noopener" class="bulk-cta-btn mt-10 inline-flex items-center gap-3">
+        <span>Contact on WhatsApp</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-[#FAFAFA] border-t border-[#E5E5E5] pt-16 pb-8 px-8">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <a href="index.html#hero" class="font-serif text-4xl tracking-[0.5em] text-gold-400 uppercase font-light block">SERIUM</a>
+      <p class="text-[#707070] text-[10px] tracking-[0.4em] uppercase mt-2">Amor Exotic · Aroma of Paris</p>
+      <p class="text-[#707070] text-xs tracking-wider mt-6">© 2026 SERIUM · Amor Exotic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

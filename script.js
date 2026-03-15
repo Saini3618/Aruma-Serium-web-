@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   /* ========== MOBILE MENU ========== */
   const menuBtn = document.getElementById('menu-btn');
