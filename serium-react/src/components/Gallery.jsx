@@ -2,8 +2,8 @@ export default function Gallery() {
   const items = [
     { img: 'images/gallery_floral_hero.png', alt: 'Floral Fresh', cat: 'Floral Collection', title: 'Floral Fresh Aroma', sub: '15ML · ₹799', extraClass: 'gal-tall', delay: '0s' },
     { img: 'images/ChatGPT Image Mar 14, 2026, 04_36_37 PM.png', alt: 'Floral Atmospheric', cat: 'Floral Collection', title: 'Floral Fresh — Atmospheric', sub: 'Dark · Captivating', extraClass: '', imgClass: 'object-top', delay: '0.08s' },
-    { img: 'images/black_oudh_dark.png', alt: 'Black Oudh', cat: 'Oriental · Signature', title: 'Black Oudh Aroma', sub: '30ML · ₹1,499', extraClass: '', delay: '0.12s' },
-    { img: 'images/ocean_breeze.png', alt: 'Ocean Breeze', cat: 'Fresh Collection', title: 'Ocean Breeze Aroma', sub: '30ML · ₹1,099', extraClass: '', delay: '0.16s' },
+    { img: 'images/Gemini_Generated_Image_pzcqnbpzcqnbpzcq.webp', alt: 'Black Oudh', cat: 'Oriental · Signature', title: 'Black Oudh Aroma', sub: '15ML · ₹1,499', extraClass: '', delay: '0.12s' },
+    { img: 'images/ocean_breeze.png', alt: 'Ocean Breeze', cat: 'Fresh Collection', title: 'Ocean Breeze Aroma', sub: '15ML · ₹1,099', extraClass: '', delay: '0.16s' },
     { img: 'images/gallery_floral_marble.png', alt: 'Serium Luxury', cat: 'Amor Exotic · Paris', title: 'The Art of Serium', sub: 'Luxury · Timeless', extraClass: '', delay: '0.20s' },
   ];
 
@@ -43,7 +43,7 @@ export default function Gallery() {
           <div className="gallery-premium-grid">
             {items.map((item, i) => (
               <div key={i} className={`gal-premium-item ${item.extraClass} reveal-up`} style={{ animationDelay: item.delay }}>
-                <img src={item.img} alt={item.alt} className={`gal-premium-img ${item.imgClass || ''}`} />
+                <img src={item.img} alt={item.alt} className={`gal-premium-img ${item.imgClass || ''}`} loading="lazy" decoding="async" />
                 <div className="gal-premium-dark"></div>
                 <div className="gal-shimmer"></div>
                 <div className="gal-glow"></div>

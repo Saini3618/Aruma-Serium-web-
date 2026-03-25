@@ -15,7 +15,7 @@ export default function Collection() {
       delay: '0.05s',
     },
     {
-      img: 'images/floral_fresh_dark.png',
+      img: 'images/updated.webp',
       alt: 'Floral Fresh Dark',
       glow: 'rgba(255,182,193,0.28)',
       category: 'floral',
@@ -35,7 +35,7 @@ export default function Collection() {
       category: 'fresh',
       badge: 'Fresh',
       badgeClass: 'fresh-badge',
-      cat: 'Fresh · 30ML',
+      cat: 'Fresh · 15ML',
       name: 'Ocean Breeze Aroma',
       tagline: '"Let the Ocean Take You Away"',
       price: '₹1,099',
@@ -49,7 +49,7 @@ export default function Collection() {
       category: 'fresh',
       badge: 'Exotic',
       badgeClass: 'exotic-badge',
-      cat: 'Fruity · 30ML',
+      cat: 'Fruity · 15ML',
       name: 'Fruity Exotica',
       tagline: '"A Burst of Tropical Paradise"',
       price: '₹1,099',
@@ -101,7 +101,7 @@ export default function Collection() {
           {products.map((p, i) => (
             <div key={i} className="product-card reveal-up" data-category={p.category} style={{ animationDelay: p.delay }}>
               <div className="product-img-wrap">
-                <img src={p.img} alt={p.alt} className="product-img" />
+                <img src={p.img} alt={p.alt} className="product-img" loading="lazy" decoding="async" />
                 <div className="product-glow" style={{ '--glow-color': p.glow }}></div>
                 <div className="product-hover-overlay">
                   <div className="product-actions">
@@ -128,7 +128,7 @@ export default function Collection() {
         <div className="mt-10 reveal-up" style={{ animationDelay: '0.35s' }}>
           <div className="oudh-feature-card group">
             <div className="oudh-img-side">
-              <img src="images/black_oudh_dark.png" alt="Black Oudh Aroma" className="oudh-img" />
+              <img src="images/Gemini_Generated_Image_pzcqnbpzcqnbpzcq.webp" alt="Black Oudh Aroma" className="oudh-img" loading="lazy" decoding="async" />
               <div className="oudh-img-fade"></div>
             </div>
             <div className="oudh-content">
@@ -152,7 +152,7 @@ export default function Collection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </a>
-                <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>30ML · Oriental</span>
+                <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>15ML · Oriental</span>
               </div>
             </div>
             <div className="oudh-glow-badge">

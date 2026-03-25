@@ -1,4 +1,4 @@
-﻿/* ================================================================
+/* ================================================================
    SERIUM Â· AMOR EXOTIC â€” Warm Pearl Ã— Antique Gold Luxury
    Complete Design System â€” Silver Edition Refined
    ================================================================ */
@@ -1781,4 +1781,31 @@ body::after {
   color: #fff;
   box-shadow: 0 10px 32px rgba(200, 151, 58, 0.32);
   transform: translateY(-2px);
+}
+
+.aura-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.aura-blob {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  filter: blur(140px);
+  animation: auraFloat 18s ease-in-out infinite alternate;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+}
+
+.aura-blob.silver {
+  background: radial-gradient(circle, rgba(176,171,158,0.12) 0%, transparent 70%);
+}
+
+.aura-blob.gold {
+  background: radial-gradient(circle, rgba(200,151,58,0.10) 0%, transparent 70%);
 }

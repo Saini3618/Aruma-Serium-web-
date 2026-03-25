@@ -7,8 +7,61 @@
   <title>SERIUM — Amor Exotic · Aroma of Paris</title>
   <meta name="description"
     content="SERIUM by Amor Exotic — Aroma of Paris. Premium luxury aroma oils crafted from the world's rarest botanicals." />
+
+  <!-- Preload LCP Hero Image -->
+  <link rel="preload" as="image" href="/images/Gemini_Generated_Image_1f42bg1f42bg1f42.webp" fetchpriority="high" />
+
+  <!-- Preload Critical Fonts (Removes font-loading chain bottleneck) -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYp3tKgS4.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- Preconnect to font servers ASAP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts with font-display=swap (fixes invisible text on load) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Fallback if CDN fails -->
+
+  <!-- Tailwind config: placed AFTER cdn script tag, so it applies immediately without polling -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 100: '#fdf4d8', 200: '#f7e093', 300: '#f0cc84', 400: '#c8973a', 500: '#9e7425', 600: '#70500f' },
+            bg: { 0: '#faf7f2', 1: '#f3efe7', 2: '#ebe6dc', 3: '#e3ddd2' },
+            dark: { 0: '#1a1610', 1: '#231e17', 2: '#2e2820', 3: '#3a3228' },
+            silver: { DEFAULT: '#b0ab9e', l: '#cec9be', ll: '#e2ddd4' },
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          keyframes: {
+            fadeUp: { '0%': { opacity: 0, transform: 'translateY(50px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
+            fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
+            float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-18px)' } },
+            pulseGlow: { '0%,100%': { opacity: 0.4 }, '50%': { opacity: 0.9 } },
+            rotateSlow: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+          },
+          animation: {
+            'fade-up': 'fadeUp 1s ease both',
+            'fade-in': 'fadeIn 1.2s ease both',
+            'float': 'float 7s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+            'rotate-slow': 'rotateSlow 20s linear infinite',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Minimal CSS fallback if Tailwind CDN fails -->
   <style>
     .flex { display: flex; }
     .flex-col { flex-direction: column; }
@@ -21,57 +74,6 @@
     .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
     .z-50 { z-index: 50; }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(registrations => {
-        for (let registration of registrations) {
-          registration.unregister();
-        }
-      });
-    }
-    window.applyTailwindConfig = function () {
-      if (typeof tailwind !== 'undefined') {
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                gold: { 100: '#fdf4d8', 200: '#f7e093', 300: '#f0cc84', 400: '#c8973a', 500: '#9e7425', 600: '#70500f' },
-                bg: { 0: '#faf7f2', 1: '#f3efe7', 2: '#ebe6dc', 3: '#e3ddd2' },
-                dark: { 0: '#1a1610', 1: '#231e17', 2: '#2e2820', 3: '#3a3228' },
-                silver: { DEFAULT: '#b0ab9e', l: '#cec9be', ll: '#e2ddd4' },
-              },
-              fontFamily: {
-                serif: ['Cormorant Garamond', 'serif'],
-                sans: ['Montserrat', 'sans-serif'],
-              },
-              keyframes: {
-                fadeUp: { '0%': { opacity: 0, transform: 'translateY(50px)' }, '100%': { opacity: 1, transform: 'translateY(0)' } },
-                fadeIn: { '0%': { opacity: 0 }, '100%': { opacity: 1 } },
-                float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-18px)' } },
-                pulseGlow: { '0%,100%': { opacity: 0.4 }, '50%': { opacity: 0.9 } },
-                rotateSlow: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
-              },
-              animation: {
-                'fade-up': 'fadeUp 1s ease both',
-                'fade-in': 'fadeIn 1.2s ease both',
-                'float': 'float 7s ease-in-out infinite',
-                'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
-                'rotate-slow': 'rotateSlow 20s linear infinite',
-              }
-            }
-          }
-        };
-      } else {
-        setTimeout(window.applyTailwindConfig, 500);
-      }
-    };
-    window.applyTailwindConfig();
-  </script>
 </head>
 
 <body>

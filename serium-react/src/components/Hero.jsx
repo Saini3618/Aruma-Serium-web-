@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative w-full min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="images/hero.png" alt="Serium Hero" className="w-full h-full object-cover object-center parallax-img" />
+        <img src="images/Gemini_Generated_Image_1f42bg1f42bg1f42.webp" alt="Serium Hero" className="w-full h-full object-cover object-center parallax-img" loading="eager" fetchpriority="high" decoding="async" />
         <div className="absolute inset-0"
           style={{ background: 'linear-gradient(105deg,rgba(22,18,14,0.94) 0%,rgba(22,18,14,0.66) 45%,rgba(22,18,14,0.32) 100%)' }}>
         </div>
@@ -34,8 +34,8 @@ export default function Hero() {
               style={{ background: 'linear-gradient(135deg,rgba(200,151,58,0.80),rgba(120,90,20,0.28),rgba(200,151,58,0.60))' }}>
               <div className="w-full h-full rounded-full overflow-hidden"
                 style={{ background: 'linear-gradient(160deg,#2e2820 0%,#3a3228 100%)' }}>
-                <img src="images/hero_floating_bottle.png" alt="Serium Luxury Bottle"
-                  className="w-full h-full object-cover scale-110" />
+                <img src="images/Gemini_Generated_Image_2bpxxg2bpxxg2bpx.webp" alt="Serium Luxury Bottle"
+                  className="w-full h-full object-cover scale-110" loading="lazy" decoding="async" />
               </div>
             </div>
             <div className="absolute inset-0 rounded-full"
@@ -63,8 +63,7 @@ export default function Hero() {
             <span className="text-white block">Where</span>
             <span className="gold-shimmer-text block italic">Scent</span>
             <span className="text-white block">Becomes</span>
-            <span className="block text-[0.58em] tracking-[0.10em] font-extralight not-italic"
-              style={{ color: 'rgba(255,255,255,0.28)' }}>Soul</span>
+            <span className="gold-shimmer-text block text-[0.58em] tracking-[0.10em] font-extralight not-italic">Soul</span>
           </h1>
           <p className="font-light text-sm leading-loose mt-8 max-w-md opacity-0 animate-fade-up"
             style={{ color: 'rgba(210,205,195,0.72)', animationDelay: '1.1s', animationFillMode: 'forwards' }}>

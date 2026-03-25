@@ -26,7 +26,7 @@ export default function Ingredients() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="reveal-left">
             <div className="image-frame group">
-              <img src="images/ingredient.png" alt="Ingredients" className="image-frame-img" />
+              <img src="images/ingredient.png" alt="Ingredients" className="image-frame-img" loading="lazy" decoding="async" />
               <div className="image-frame-overlay"></div>
               <div className="corner-tl"></div>
               <div className="corner-br"></div>
