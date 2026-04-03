@@ -15,12 +15,12 @@ export default function Layout({ children }) {
     /* ========== LOADER ========== */
     const loader = document.getElementById('loader');
     const hideLoader = () => setTimeout(() => loader?.classList.add('hidden'), 1200);
-    
+
     // On mount, if it's not hidden, hide it.
     if (loader && !loader.classList.contains('hidden')) {
       setTimeout(() => loader.classList.add('hidden'), 1500);
     }
-    
+
     /* ========== CUSTOM CURSOR ========== */
     const cursor = document.getElementById('cursor');
     const follower = document.getElementById('cursor-follower');
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
     let followerRafId = null;
 
     const onMouseMove = e => {
-      mx = e.clientX; 
+      mx = e.clientX;
       my = e.clientY;
       cursor.style.transform = `translate(${mx - 5}px,${my - 5}px)`;
     };
@@ -104,7 +104,7 @@ export default function Layout({ children }) {
       <Loader />
       <Navbar />
       <MobileMenu />
-      
+
       <main className="relative z-10 w-full min-h-screen">
         {children}
       </main>

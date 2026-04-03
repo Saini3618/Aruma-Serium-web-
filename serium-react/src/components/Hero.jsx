@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative w-full min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="images/Gemini_Generated_Image_1f42bg1f42bg1f42.webp" alt="Serium Hero" className="w-full h-full object-cover object-center parallax-img" loading="eager" fetchpriority="high" decoding="async" />
+        <img src="images/Gemini_Generated_Image_xubt20xubt20xubt (1).webp" alt="Serium Hero" className="w-full h-full object-cover object-center parallax-img" loading="eager" fetchpriority="high" decoding="async" />
         <div className="absolute inset-0"
           style={{ background: 'linear-gradient(105deg,rgba(22,18,14,0.94) 0%,rgba(22,18,14,0.66) 45%,rgba(22,18,14,0.32) 100%)' }}>
         </div>

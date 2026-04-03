@@ -15,12 +15,12 @@ export default function Navbar() {
           <Link to="/#ingredients" className="nav-link magnetic">Ingredients</Link>
           <Link to="/#contact" className="nav-link magnetic">Contact</Link>
           <div className="relative group/bulk">
-            <Link to="/bulk-orders" className="nav-link cursor-pointer flex items-center gap-1.5 transition-colors duration-300">
+            <div className="nav-link cursor-pointer flex items-center gap-1.5 transition-colors duration-300">
               Bulk Orders
               <svg className="w-2.5 h-2.5 opacity-40 group-hover/bulk:rotate-180 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
               </svg>
-            </Link>
+            </div>
             {/* Dropdown Menu */}
             <div className="absolute top-full left-0 pt-4 opacity-0 invisible group-hover/bulk:opacity-100 group-hover/bulk:visible transition-all duration-300 translate-y-2 group-hover/bulk:translate-y-0 z-[60]">
               <div className="w-56 bg-[#1a1610] border border-white/5 backdrop-blur-2xl shadow-2xl p-2 rounded-px">

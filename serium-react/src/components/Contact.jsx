@@ -1,64 +1,55 @@
+import React from 'react';
+
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-32 px-8 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 50% 50%, #fcf9f2 0%, #ebe2ce 100%)' }}>
+    <section id="contact" className="py-40 relative flex items-center justify-center overflow-hidden min-h-[70vh] bg-[#FDFBF7]">
+      {/* Dynamic Glowing Background Orbs */}
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gold-400/20 rounded-full blur-[120px] mix-blend-multiply animate-pulse-glow"></div>
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-amber-600/10 rounded-full blur-[100px] mix-blend-multiply animate-float" style={{ animationDuration: '10s' }}></div>
+      
+      {/* Overlay subtle texture */}
+      <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 512 512\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.85\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")' }}></div>
 
-      {/* Ultra premium light overlay */}
-      <div className="absolute inset-0"
-        style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E\")", zIndex: 1, pointerEvents: 'none' }}>
-      </div>
-
-      {/* Subtle glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px]"
-        style={{ background: 'radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,0.8) 0%, transparent 100%)', zIndex: 2, pointerEvents: 'none' }}>
-      </div>
-
-      <div className="relative z-10 max-w-3xl mx-auto text-center">
-        <div className="flex items-center justify-center gap-6 mb-12 reveal-up">
-          <div className="h-px w-10" style={{ background: 'rgba(189,157,99,0.4)' }}></div>
-          <p className="text-[9.5px] tracking-[0.45em] uppercase font-medium" style={{ color: '#bc9e65' }}>Begin Your Journey</p>
-          <div className="h-px w-10" style={{ background: 'rgba(189,157,99,0.4)' }}></div>
-        </div>
-
-        <div className="relative inline-block text-left mb-8">
-          <h2 className="font-serif font-light leading-[1.3] text-center reveal-up"
-            style={{ fontSize: 'clamp(3.5rem,7vw,5.5rem)', color: '#332d26', position: 'relative', zIndex: 3 }}>
-            Wear the <em style={{ color: '#bc9e65', fontStyle: 'italic' }}>World's</em><br />Finest Scents
-          </h2>
-        </div>
-
-        <p className="text-[12px] leading-[1.8] mb-14 max-w-md mx-auto reveal-up font-light"
-          style={{ color: 'rgba(51, 45, 38, 0.55)', animationDelay: '0.1s', letterSpacing: '0.02em' }}>
-          Join thousands who have discovered the transformative power<br />
-          of Amor Exotic. Be the first to know about new launches and<br />
-          exclusive offers.
-        </p>
-
-        {/* Subscribe Form */}
-        <div className="reveal-up mx-auto relative group" style={{ animationDelay: '0.2s', maxWidth: '480px' }}>
-          <div
-            className="absolute inset-0 bg-white rounded-full opacity-60 blur-md transition-all duration-500 group-hover:opacity-100 group-hover:blur-xl"
-            style={{ zIndex: 0 }}></div>
-
-          <div className="relative flex items-center"
-            style={{ background: '#ffffff', borderRadius: '50px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.04), 0 5px 15px rgba(0,0,0,0.02)', zIndex: 5, border: '1px solid rgba(255,255,255,0.8)' }}>
-
-            <input id="sub-email" type="email" placeholder="Your email address"
-              className="flex-1 bg-transparent border-none outline-none font-light"
-              style={{ padding: '24px 34px', color: '#332d26', fontSize: '11px', letterSpacing: '0.15em', fontFamily: "'Montserrat', sans-serif" }} />
-
-            <button id="sub-btn" className="transition-all duration-500 ease-out hover:brightness-110"
-              style={{ background: '#be9d5c', color: '#fff', border: 'none', padding: '24px 45px', fontSize: '10px', letterSpacing: '0.35em', textTransform: 'uppercase', fontWeight: 500, fontFamily: "'Montserrat', sans-serif", cursor: 'none' }}>
-              Subscribe
-            </button>
+      <div className="max-w-5xl mx-auto px-8 relative z-10 w-full reveal-up">
+        <div className="relative p-16 md:p-24 rounded-[40px] border border-white/60 shadow-[0_40px_100px_rgba(26,22,16,0.08)] overflow-hidden group">
+          {/* Glass effect background */}
+          <div className="absolute inset-0 bg-white/40 backdrop-blur-2xl"></div>
+          
+          {/* Inner border glow */}
+          <div className="absolute inset-0 rounded-[40px] border border-white transition-colors duration-1000 group-hover:border-gold-400/40"></div>
+          
+          <div className="relative z-10 text-center flex flex-col items-center">
+            <div className="flex items-center gap-4 mb-10">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+              <p className="text-[11px] tracking-[0.6em] uppercase text-gold-600 font-bold bg-clip-text text-transparent bg-gradient-to-r from-gold-500 to-gold-800">Premium Partnership</p>
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+            </div>
+            
+            <h2 className="font-serif font-light text-5xl md:text-7xl lg:text-8xl text-[#1a1610] leading-[1.1] mb-12 relative">
+              Define Your <br />
+              <span className="relative inline-block mt-2">
+                <span className="absolute -inset-2 bg-gold-400/10 blur-xl rounded-full"></span>
+                <span className="relative italic bg-clip-text text-transparent bg-gradient-to-r from-[#B0891D] via-[#D4AF37] to-[#8C6008] drop-shadow-[0_0_15px_rgba(212,175,55,0.2)]">Signature Atmosphere</span>
+              </span>
+            </h2>
+            
+            <p className="text-[#1a1610]/50 text-xs tracking-[0.4em] uppercase mb-14 font-light mix-blend-multiply">Bulk Gifting · Retail Supply · Hospitality Contracts</p>
+            
+            <a href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20orders%20for%20Serium"
+              target="_blank" rel="noopener noreferrer" 
+              className="relative overflow-hidden rounded-full p-[2px] group/btn transition-transform hover:scale-105 duration-500 shadow-xl shadow-gold-900/10 hover:shadow-gold-900/20">
+              <span className="absolute inset-0 bg-gradient-to-r from-gold-400 via-gold-200 to-gold-400 rounded-full opacity-70 group-hover/btn:opacity-100 animate-pulse-glow"></span>
+              <div className="relative bg-[#FAF9F6] px-16 py-6 rounded-full flex items-center gap-4 transition-colors group-hover/btn:bg-transparent">
+                <span className="text-[12px] tracking-[0.4em] uppercase font-bold text-[#1a1610] transition-colors duration-500">Contact Business Team</span>
+                <svg className="w-5 h-5 text-gold-600 group-hover/btn:text-[#1a1610] group-hover/btn:translate-x-2 transition-all duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
-
-        <p className="text-[8.5px] tracking-[0.25em] mt-8 reveal-up font-light"
-          style={{ color: 'rgba(51, 45, 38, 0.35)', animationDelay: '0.3s', textTransform: 'uppercase' }}>
-          No spam. Pure luxury, delivered to your inbox.
-        </p>
       </div>
     </section>
   );
 }
+

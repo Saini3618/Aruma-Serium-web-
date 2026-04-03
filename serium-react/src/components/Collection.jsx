@@ -1,76 +1,9 @@
+import { Link } from 'react-router-dom';
+import { products } from '../data/products';
+
 export default function Collection() {
-  const products = [
-    {
-      img: 'images/Floral fresh Aroma1.png',
-      alt: 'Floral Fresh Aroma',
-      glow: 'rgba(255,182,193,0.28)',
-      category: 'floral',
-      badge: 'Bestseller',
-      badgeClass: '',
-      cat: 'Floral · 15ML',
-      name: 'Floral Fresh Aroma',
-      tagline: '"Aroma Strong Enough to Steal a Kiss"',
-      price: '₹799',
-      stars: '★★★★★',
-      delay: '0.05s',
-    },
-    {
-      img: 'images/updated.webp',
-      alt: 'Floral Fresh Dark',
-      glow: 'rgba(255,182,193,0.28)',
-      category: 'floral',
-      badge: 'New Look',
-      badgeClass: 'new',
-      cat: 'Floral · 15ML',
-      name: 'Floral Fresh Aroma',
-      tagline: '"Aroma Strong Enough to Steal a Kiss"',
-      price: '₹799',
-      stars: '★★★★★',
-      delay: '0.1s',
-    },
-    {
-      img: 'images/ocean_breeze.png',
-      alt: 'Ocean Breeze',
-      glow: 'rgba(100,200,255,0.28)',
-      category: 'fresh',
-      badge: 'Fresh',
-      badgeClass: 'fresh-badge',
-      cat: 'Fresh · 15ML',
-      name: 'Ocean Breeze Aroma',
-      tagline: '"Let the Ocean Take You Away"',
-      price: '₹1,099',
-      stars: '★★★★★',
-      delay: '0.15s',
-    },
-    {
-      img: 'images/fruity_exotica.png',
-      alt: 'Fruity Exotica',
-      glow: 'rgba(255,180,50,0.28)',
-      category: 'fresh',
-      badge: 'Exotic',
-      badgeClass: 'exotic-badge',
-      cat: 'Fruity · 15ML',
-      name: 'Fruity Exotica',
-      tagline: '"A Burst of Tropical Paradise"',
-      price: '₹1,099',
-      stars: '★★★★★',
-      delay: '0.2s',
-    },
-    {
-      img: 'images/aqua_aroma.png',
-      alt: 'Aqua Aroma',
-      glow: 'rgba(80,220,220,0.28)',
-      category: 'fresh',
-      badge: null,
-      badgeClass: '',
-      cat: 'Fresh · 15ML',
-      name: 'Aqua Aroma',
-      tagline: '"Pure As Morning Dew"',
-      price: '₹799',
-      stars: '★★★★☆',
-      delay: '0.25s',
-    },
-  ];
+  const displayProducts = products.filter(p => p.id !== 'black-oudh-aroma');
+  const blackOudh = products.find(p => p.id === 'black-oudh-aroma');
 
   return (
     <section id="collection" className="py-20 px-8 relative overflow-hidden" style={{ background: 'var(--bg-1)' }}>
@@ -98,14 +31,14 @@ export default function Collection() {
         </div>
 
         <div id="products" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-          {products.map((p, i) => (
+          {displayProducts.map((p, i) => (
             <div key={i} className="product-card reveal-up" data-category={p.category} style={{ animationDelay: p.delay }}>
               <div className="product-img-wrap">
                 <img src={p.img} alt={p.alt} className="product-img" loading="lazy" decoding="async" />
                 <div className="product-glow" style={{ '--glow-color': p.glow }}></div>
                 <div className="product-hover-overlay">
                   <div className="product-actions">
-                    <a href="#contact" className="product-buy-btn magnetic">Buy Now</a>
+                    <Link to={`/product/${p.slug}`} className="product-buy-btn magnetic">View Details</Link>
                     <button className="product-wish-btn magnetic" title="Wishlist">♡</button>
                   </div>
                 </div>
@@ -113,53 +46,53 @@ export default function Collection() {
               </div>
               <div className="product-info">
                 <p className="product-category">{p.cat}</p>
-                <h3 className="product-name">{p.name}</h3>
+                <h3 className="product-name">
+                  <Link to={`/product/${p.slug}`} className="hover:text-gold-400 transition-colors">
+                    {p.name}
+                  </Link>
+                </h3>
                 <p className="product-tagline">{p.tagline}</p>
-                <div className="product-footer">
-                  <p className="product-price">{p.price}</p>
-                  <div className="product-stars">{p.stars}</div>
-                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Black Oudh feature */}
-        <div className="mt-10 reveal-up" style={{ animationDelay: '0.35s' }}>
-          <div className="oudh-feature-card group">
-            <div className="oudh-img-side">
-              <img src="images/Gemini_Generated_Image_pzcqnbpzcqnbpzcq.webp" alt="Black Oudh Aroma" className="oudh-img" loading="lazy" decoding="async" />
-              <div className="oudh-img-fade"></div>
-            </div>
-            <div className="oudh-content">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px w-8 bg-gold-400/55"></div>
-                <span className="text-[9px] tracking-[0.5em] uppercase text-gold-400">Limited Edition · Oriental</span>
+        {blackOudh && (
+          <div className="mt-10 reveal-up" style={{ animationDelay: '0.35s' }}>
+            <div className="oudh-feature-card group">
+              <div className="oudh-img-side">
+                <img src={blackOudh.img} alt={blackOudh.alt} className="oudh-img" loading="lazy" decoding="async" />
+                <div className="oudh-img-fade"></div>
               </div>
-              <h3 className="font-serif text-white mb-3 split-text" style={{ fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 300 }}>
-                Black Oudh <em className="text-gold-400">Aroma</em>
-              </h3>
-              <p className="text-sm font-light italic mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.38)' }}>"Light Me, Love Me, Lose Yourself."</p>
-              <p className="text-sm font-light leading-relaxed max-w-lg mb-8" style={{ color: 'rgba(210,205,195,0.60)' }}>
-                Distilled from the rarest Agarwood of the Arabian Peninsula. A deep, smouldering oriental fragrance that
-                commands attention, ignites desire, and lingers long after you've left the room.
-              </p>
-              <div className="flex items-center gap-6 flex-wrap">
-                <p className="font-serif text-3xl text-gold-400 font-light">₹1,499</p>
-                <a href="#contact" className="btn-gold-sm group flex items-center gap-2 magnetic">
-                  <span>Buy Now</span>
-                  <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>15ML · Oriental</span>
+              <div className="oudh-content">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-8 bg-gold-400/55"></div>
+                  <span className="text-[9px] tracking-[0.5em] uppercase text-gold-400">Limited Edition · Oriental</span>
+                </div>
+                <h3 className="font-serif text-white mb-3 split-text" style={{ fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 300 }}>
+                  {blackOudh.name.split(' ')[0]} <em className="text-gold-400">{blackOudh.name.split(' ').slice(1).join(' ')}</em>
+                </h3>
+                <p className="text-sm font-light italic mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.38)' }}>{blackOudh.tagline}</p>
+                <p className="text-sm font-light leading-relaxed max-w-lg mb-8" style={{ color: 'rgba(210,205,195,0.60)' }}>
+                  {blackOudh.description}
+                </p>
+                <div className="flex items-center gap-6 flex-wrap">
+                  <Link to={`/product/${blackOudh.slug}`} className="btn-gold-sm group flex items-center gap-2 magnetic">
+                    <span>Explore Aroma</span>
+                    <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                  <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>{blackOudh.cat}</span>
+                </div>
               </div>
-            </div>
-            <div className="oudh-glow-badge">
-              <span className="font-serif text-gold-400 text-xs tracking-widest">SIGNATURE</span>
+              <div className="oudh-glow-badge">
+                <span className="font-serif text-gold-400 text-xs tracking-widest">SIGNATURE</span>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

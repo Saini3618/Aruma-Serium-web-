@@ -1100,7 +1100,7 @@ body::after {
 
 /* Floral Hero */
 .gal-premium-item:nth-child(2) .gal-premium-img {
-  object-position: 50% 20%;
+  object-position: center;
 }
 
 /* WhatsApp Image */

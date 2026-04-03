@@ -10,7 +10,7 @@ export default function About() {
           <div className="absolute -top-5 -left-5 font-serif leading-none select-none pointer-events-none font-light"
             style={{ fontSize: '160px', color: 'rgba(42,33,24,0.04)' }}>S</div>
           <div className="image-frame group">
-            <img src="images/about.png" alt="About Serium" className="image-frame-img" loading="lazy" decoding="async" />
+            <img src="images/home bottel.webp" alt="About Serium" className="image-frame-img" loading="lazy" decoding="async" />
             <div className="image-frame-overlay"></div>
             <div className="corner-tl"></div>
             <div className="corner-br"></div>

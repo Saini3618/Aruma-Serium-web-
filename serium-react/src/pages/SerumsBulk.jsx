@@ -14,7 +14,7 @@ const products = [
     delay: '0.1s',
   },
   {
-    img: 'images/Gemini_Generated_Image_pzcqnbpzcqnbpzcq.webp',
+    img: 'images/hero ultra image.webp',
     alt: 'Black Oudh Aroma',
     cat: 'Oriental Signature',
     name: 'Black Oudh Aroma',
@@ -163,7 +163,6 @@ export default function SerumsBulk() {
             <h1 className="font-serif font-light leading-none reveal-up" style={{ fontSize: 'clamp(4rem,10vw,8.5rem)' }}>
               <span className="text-white block">Aruoma</span>
               <span className="gold-shimmer-text block italic">Signature</span>
-              <span className="text-white block text-[0.45em] tracking-[0.1em] mt-4 uppercase font-extralight not-italic opacity-40">Luxury Serums</span>
             </h1>
             <p className="mt-12 text-sm md:text-base leading-loose max-w-xl text-white/60 reveal-up" style={{ animationDelay: '0.3s' }}>
               Rare botanicals. Timeless artistry. Our premium fragrance serums are crafted for the world's most
@@ -273,7 +272,7 @@ export default function SerumsBulk() {
             {/* Right Image Full Bleed */}
             <div className="flex-1 relative min-h-[450px] lg:min-h-auto overflow-hidden group">
               <div className="absolute inset-0 bg-black"></div>
-              <SafeImage src="images/Gemini_Generated_Image_pzcqnbpzcqnbpzcq.webp" alt="Oudh Quality" className="w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105" />
+              <SafeImage src="images/hero ultra image.webp" alt="Oudh Quality" className="w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#1a1610] via-black/40 to-transparent lg:w-1/2"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-transparent to-transparent opacity-80 lg:hidden"></div>
 
