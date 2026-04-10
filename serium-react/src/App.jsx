@@ -7,7 +7,7 @@ import Collection from './components/Collection';
 import Features from './components/Features';
 import Ingredients from './components/Ingredients';
 import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
+import Clients from './components/Clients';
 import Contact from './components/Contact';
 
 export default function App() {
@@ -199,7 +199,7 @@ export default function App() {
       <Features />
       <Ingredients />
       <Gallery />
-      <Testimonials />
+      <Clients />
       <Contact />
     </Layout>
   );

@@ -4,9 +4,9 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img src="images/Gemini_Generated_Image_xubt20xubt20xubt (1).webp" alt="Serium Hero" className="w-full h-full object-cover object-center parallax-img" loading="eager" fetchpriority="high" decoding="async" />
         <div className="absolute inset-0"
-          style={{ background: 'linear-gradient(105deg,rgba(22,18,14,0.94) 0%,rgba(22,18,14,0.66) 45%,rgba(22,18,14,0.32) 100%)' }}>
+          style={{ background: 'linear-gradient(105deg,rgba(22,18,14,0.82) 0%,rgba(22,18,14,0.55) 45%,rgba(22,18,14,0.20) 100%)' }}>
         </div>
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,#1a1610 0%,transparent 40%)' }}></div>
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top,rgba(26,22,16,0.85) 0%,transparent 50%)' }}></div>
       </div>
 
       <div className="abs-orb animate-pulse-glow"
@@ -44,33 +44,33 @@ export default function Hero() {
             <div
               className="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap backdrop-blur-sm border border-gold-400/28 px-4 py-1.5 rounded-full"
               style={{ background: 'rgba(26,22,16,0.88)' }}>
-              <span className="text-gold-400 text-[9px] tracking-[0.35em] uppercase font-medium">Serium · Amor Exotic</span>
+              <span className="text-gold-400 text-[9px] tracking-[0.35em] uppercase font-medium">Amor · Pure Aroma Oil</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 max-w-screen-2xl mx-auto px-8 pt-28 pb-20">
+      <div className="relative z-10 max-w-screen-2xl mx-auto px-5 sm:px-8 pt-28 pb-20">
         <div className="max-w-2xl">
           <div className="flex items-center gap-4 mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
             <div className="h-px w-12 bg-gold-400"></div>
-            <p className="text-[10px] tracking-[0.6em] uppercase text-gold-400 font-medium">Amor Exotic · Aroma of Paris</p>
+            <p className="text-[10px] tracking-[0.6em] uppercase text-gold-400 font-medium">Amor Fragrance · Pure Aroma Oils</p>
           </div>
           <h1 className="font-serif font-light leading-none opacity-0 animate-fade-up"
-            style={{ fontSize: 'clamp(4rem,10vw,8.5rem)', animationDelay: '0.7s', animationFillMode: 'forwards' }}>
-            <span className="text-white block">Where</span>
-            <span className="gold-shimmer-text block italic">Scent</span>
-            <span className="text-white block">Becomes</span>
-            <span className="gold-shimmer-text block text-[0.58em] tracking-[0.10em] font-extralight not-italic">Soul</span>
+            style={{ fontSize: 'clamp(2.6rem,6vw,5.5rem)', animationDelay: '0.7s', animationFillMode: 'forwards' }}>
+            <span className="text-white block">Amor</span>
+            <span className="gold-shimmer-text block italic">Fragrance</span>
+            <span className="text-white block">Amor</span>
+            <span className="gold-shimmer-text block text-[0.82em] tracking-[0.08em] font-extralight not-italic">Oil</span>
           </h1>
           <p className="font-light text-sm leading-loose mt-8 max-w-md opacity-0 animate-fade-up"
-            style={{ color: 'rgba(210,205,195,0.72)', animationDelay: '1.1s', animationFillMode: 'forwards' }}>
-            Rare botanicals. Timeless artistry. Every drop of SERIUM is a journey through the world's most extraordinary
-            aromas — crafted for those who demand nothing less.
+            style={{ color: 'rgba(235,230,220,0.95)', animationDelay: '1.1s', animationFillMode: 'forwards' }}>
+            Handcrafted from the finest natural botanicals, Amor Fragrance aroma oils are born to elevate your space,
+            your mood, and your ritual — one pure drop at a time.
           </p>
-          <div className="flex flex-wrap gap-4 mt-10 opacity-0 animate-fade-up"
+          <div className="flex flex-wrap gap-3 mt-8 sm:mt-10 opacity-0 animate-fade-up"
             style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
             <a href="#collection" className="btn-gold group flex items-center gap-3">
               <span>Explore Collection</span>
@@ -81,19 +81,19 @@ export default function Hero() {
             <a href="#about" className="btn-outline">Our Story</a>
           </div>
           {/* Stats */}
-          <div className="flex gap-10 mt-16 opacity-0 animate-fade-up"
+          <div className="flex flex-wrap gap-6 sm:gap-10 mt-10 sm:mt-16 opacity-0 animate-fade-up"
             style={{ animationDelay: '1.7s', animationFillMode: 'forwards' }}>
             <div>
-              <p className="font-serif text-3xl text-gold-400 font-light counter" data-target="5">0</p>
-              <p className="text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>Scents</p>
+              <p className="font-serif text-2xl sm:text-3xl text-gold-400 font-light counter" data-target="5">0</p>
+              <p className="text-[8px] sm:text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>Aroma Oils</p>
             </div>
-            <div className="pl-10" style={{ borderLeft: '1px solid rgba(255,255,255,0.15)' }}>
-              <p className="font-serif text-3xl text-gold-400 font-light counter" data-target="100">0</p>
-              <p className="text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>% Natural</p>
+            <div className="pl-5 sm:pl-10" style={{ borderLeft: '1px solid rgba(255,255,255,0.15)' }}>
+              <p className="font-serif text-2xl sm:text-3xl text-gold-400 font-light counter" data-target="100">0</p>
+              <p className="text-[8px] sm:text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>% Pure Natural</p>
             </div>
-            <div className="pl-10" style={{ borderLeft: '1px solid rgba(255,255,255,0.15)' }}>
-              <p className="font-serif text-3xl text-gold-400 font-light counter" data-target="50000">0</p>
-              <p className="text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>Happy Clients</p>
+            <div className="pl-5 sm:pl-10" style={{ borderLeft: '1px solid rgba(255,255,255,0.15)' }}>
+              <p className="font-serif text-2xl sm:text-3xl text-gold-400 font-light counter" data-target="10000">0</p>
+              <p className="text-[8px] sm:text-[9px] tracking-[0.4em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>Happy Clients</p>
             </div>
           </div>
         </div>

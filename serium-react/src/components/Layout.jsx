@@ -21,10 +21,68 @@ export default function Layout({ children }) {
       setTimeout(() => loader.classList.add('hidden'), 1500);
     }
 
-    /* ========== CUSTOM CURSOR ========== */
+    /* ========== MOBILE MENU ========== */
+    const menuBtn = document.getElementById('menu-btn');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    const openMenu = () => {
+      mobileMenu?.classList.remove('hidden');
+      mobileMenu?.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+    const closeMenu = () => {
+      mobileMenu?.classList.add('hidden');
+      mobileMenu?.classList.remove('flex');
+      document.body.style.overflow = '';
+    };
+
+    menuBtn?.addEventListener('click', openMenu);
+    menuClose?.addEventListener('click', closeMenu);
+    mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+    /* ========== CUSTOM CURSOR (desktop only) ========== */
+    const isTouchDevice = window.matchMedia('(hover: none)').matches;
     const cursor = document.getElementById('cursor');
     const follower = document.getElementById('cursor-follower');
-    if (!cursor || !follower) return;
+
+    if (isTouchDevice) {
+      if (cursor) cursor.style.display = 'none';
+      if (follower) follower.style.display = 'none';
+      document.body.style.cursor = 'auto';
+    }
+
+    if (!cursor || !follower || isTouchDevice) {
+      /* skip cursor setup on touch */
+      /* but still run rest of the effect */
+      const navbarEl = document.getElementById('navbar');
+      const scrollProgressEl = document.getElementById('scroll-progress');
+      const onScrollFallback = () => {
+        const sy = window.scrollY;
+        navbarEl?.classList.toggle('scrolled', sy > 60);
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (sy / height) * 100;
+        if (scrollProgressEl) scrollProgressEl.style.width = scrolled + '%';
+      };
+      window.addEventListener('scroll', onScrollFallback, { passive: true });
+      const revealElsFallback = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+      const revealObsFallback = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = parseFloat(entry.target.style.animationDelay || '0') * 1000;
+            setTimeout(() => entry.target.classList.add('visible'), delay);
+            revealObsFallback.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealElsFallback.forEach(el => revealObsFallback.observe(el));
+      return () => {
+        window.removeEventListener('scroll', onScrollFallback);
+        revealObsFallback.disconnect();
+        menuBtn?.removeEventListener('click', openMenu);
+        menuClose?.removeEventListener('click', closeMenu);
+      };
+    }
 
     let mx = 0, my = 0, fx = 0, fy = 0;
     let followerRafId = null;
@@ -86,6 +144,8 @@ export default function Layout({ children }) {
       window.removeEventListener('scroll', onScroll);
       if (followerRafId) cancelAnimationFrame(followerRafId);
       revealObs.disconnect();
+      menuBtn?.removeEventListener('click', openMenu);
+      menuClose?.removeEventListener('click', closeMenu);
     };
   }, [pathname]);
 

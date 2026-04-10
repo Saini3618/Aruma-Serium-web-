@@ -4,11 +4,11 @@ export default function Gallery() {
     { img: 'images/aaa.webp', alt: 'Floral Atmospheric', cat: 'Floral Collection', title: 'Floral Fresh — Atmospheric', sub: 'Dark · Captivating', extraClass: '', imgClass: 'object-center', delay: '0.08s' },
     { img: 'images/new img.webp', alt: 'Black Oudh', cat: 'Oriental · Signature', title: 'Black Oudh Aroma', sub: '15ML', extraClass: '', delay: '0.12s' },
     { img: 'images/ocean_breeze.png', alt: 'Ocean Breeze', cat: 'Fresh Collection', title: 'Ocean Breeze Aroma', sub: '15ML', extraClass: '', delay: '0.16s' },
-    { img: 'images/hero ultra image.webp', alt: 'Serium Luxury', cat: 'Amor Exotic · Paris', title: 'The Art of Serium', sub: 'Luxury · Timeless', extraClass: '', delay: '0.20s' },
+    { img: 'images/Aroma image.webp', alt: 'Serium Luxury', cat: 'Amor Exotic · Paris', title: 'The Art of Serium', sub: 'Luxury · Timeless', extraClass: '', delay: '0.20s' },
   ];
 
   return (
-    <section className="py-24 px-8 relative overflow-hidden"
+    <section className="py-14 sm:py-24 px-5 sm:px-8 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #fefdf9 0%, #f6f1e6 50%, #eee6d6 100%)' }}>
 
       {/* Texture overlay */}
@@ -64,3 +64,4 @@ export default function Gallery() {
     </section>
   );
 }
+

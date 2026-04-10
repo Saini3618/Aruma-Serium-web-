@@ -6,7 +6,7 @@ export default function Collection() {
   const blackOudh = products.find(p => p.id === 'black-oudh-aroma');
 
   return (
-    <section id="collection" className="py-20 px-8 relative overflow-hidden" style={{ background: 'var(--bg-1)' }}>
+    <section id="collection" className="py-14 sm:py-20 px-5 sm:px-8 relative overflow-hidden" style={{ background: 'var(--bg-1)' }}>
       <div className="abs-orb"
         style={{ top: '50%', right: 0, width: '550px', height: '550px', background: 'rgba(200,151,58,0.05)', transform: 'translateX(50%) translateY(-50%)' }}>
       </div>
@@ -97,3 +97,4 @@ export default function Collection() {
     </section>
   );
 }
+

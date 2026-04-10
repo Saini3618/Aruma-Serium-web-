@@ -134,7 +134,7 @@ export default function CandlesBulk() {
           </div>
         </div>
 
-        <div className="relative z-10 max-w-screen-xl mx-auto px-8 w-full">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8 w-full">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-10 reveal-up">
               <div className="h-px w-12 bg-gold-400/50"></div>
@@ -151,7 +151,7 @@ export default function CandlesBulk() {
               technology with high-couture design for the ultimate sanctuary in any environment.
             </p>
             <div className="flex flex-wrap items-center gap-10 mt-14 reveal-up" style={{ animationDelay: '0.3s' }}>
-              <a href="#pro-candles" className="btn-gold group px-14 py-6 text-[11px]">
+              <a href="#pro-candles" className="btn-gold group px-8 sm:px-14 py-5 sm:py-6 text-[11px]">
                 <span>Explore Bulk Portfolio</span>
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
@@ -167,7 +167,7 @@ export default function CandlesBulk() {
       </section>
 
       {/* Grid Section */}
-      <section id="pro-candles" className="py-40 px-8 bg-[#F9F9F4] relative overflow-hidden">
+      <section id="pro-candles" className="py-20 sm:py-40 px-5 sm:px-8 bg-[#F9F9F4] relative overflow-hidden">
         <div className="abs-orb" style={{ bottom: '-10%', left: '-5%', width: '500px', height: '500px', background: 'rgba(212,168,66,0.04)' }}></div>
         <div className="max-w-screen-xl mx-auto relative z-10">
           <div className="mb-32 text-center reveal-up">
@@ -213,7 +213,7 @@ export default function CandlesBulk() {
       {/* Corporate Section */}
       <section className="py-40 bg-[#1a1610] overflow-hidden relative border-t border-white/5">
         <div className="abs-orb" style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '1000px', height: '1000px', background: 'rgba(212,168,66,0.02)' }}></div>
-        <div className="max-w-screen-xl mx-auto px-8 relative z-10">
+        <div className="max-w-screen-xl mx-auto px-5 sm:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-32">
             <div className="flex-1 reveal-up">
               <h2 className="font-serif text-5xl md:text-8xl text-white font-light leading-tight mb-12">Absolute <br /><span className="italic gold-shimmer-text">Ambience</span></h2>
@@ -253,8 +253,8 @@ export default function CandlesBulk() {
         {/* Overlay subtle texture */}
         <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 512 512\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.85\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\'/%3E%3C/svg%3E")' }}></div>
 
-        <div className="max-w-5xl mx-auto px-8 relative z-10 w-full reveal-up">
-          <div className="relative p-16 md:p-24 rounded-[40px] border border-white/60 shadow-[0_40px_100px_rgba(26,22,16,0.08)] overflow-hidden group">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 relative z-10 w-full reveal-up">
+          <div className="relative p-8 sm:p-16 md:p-24 rounded-[40px] border border-white/60 shadow-[0_40px_100px_rgba(26,22,16,0.08)] overflow-hidden group">
             {/* Glass effect background */}
             <div className="absolute inset-0 bg-white/40 backdrop-blur-2xl"></div>
 
@@ -276,14 +276,14 @@ export default function CandlesBulk() {
                 </span>
               </h2>
 
-              <p className="text-[#1a1610]/50 text-xs tracking-[0.4em] uppercase mb-14 font-light mix-blend-multiply">Bulk Gifting · Retail Supply · Hospitality Contracts</p>
+              <p className="text-[#1a1610]/50 text-[10px] tracking-[0.08em] sm:tracking-[0.25em] uppercase mb-8 sm:mb-14 font-light">Bulk Gifting · Retail Supply · Hospitality Contracts</p>
 
               <a href="https://wa.me/8302607949?text=Hello%20I%20am%20interested%20in%20bulk%20orders%20for%20CANDALS"
                 target="_blank" rel="noopener noreferrer"
                 className="relative overflow-hidden rounded-full p-[2px] group/btn transition-transform hover:scale-105 duration-500 shadow-xl shadow-gold-900/10 hover:shadow-gold-900/20">
                 <span className="absolute inset-0 bg-gradient-to-r from-gold-400 via-gold-200 to-gold-400 rounded-full opacity-70 group-hover/btn:opacity-100 animate-pulse-glow"></span>
-                <div className="relative bg-[#FAF9F6] px-16 py-6 rounded-full flex items-center gap-4 transition-colors group-hover/btn:bg-transparent">
-                  <span className="text-[12px] tracking-[0.4em] uppercase font-bold text-[#1a1610] transition-colors duration-500">Contact Business Team</span>
+                <div className="relative bg-[#FAF9F6] px-8 sm:px-16 py-4 sm:py-6 rounded-full flex items-center gap-4 transition-colors group-hover/btn:bg-transparent">
+                  <span className="text-[10px] sm:text-[12px] tracking-[0.15em] sm:tracking-[0.4em] uppercase font-bold text-[#1a1610] transition-colors duration-500 whitespace-nowrap">Contact Business Team</span>
                   <svg className="w-5 h-5 text-gold-600 group-hover/btn:text-[#1a1610] group-hover/btn:translate-x-2 transition-all duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -296,3 +296,5 @@ export default function CandlesBulk() {
     </Layout>
   );
 }
+
+

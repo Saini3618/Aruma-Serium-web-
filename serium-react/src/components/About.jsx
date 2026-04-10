@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 px-8 relative overflow-hidden" style={{ background: 'var(--bg-0)' }}>
+    <section id="about" className="py-14 sm:py-20 px-5 sm:px-8 relative overflow-hidden" style={{ background: 'var(--bg-0)' }}>
       <div className="abs-orb"
         style={{ top: 0, left: 0, width: '600px', height: '600px', background: 'rgba(200,151,58,0.04)', transform: 'translate(-50%,-50%)' }}>
       </div>
-      <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-screen-xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
         <div className="reveal-left relative">
           <div className="absolute -top-5 -left-5 font-serif leading-none select-none pointer-events-none font-light"
@@ -44,17 +44,17 @@ export default function About() {
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-0" style={{ border: '1px solid rgba(178,168,148,0.32)' }}>
-            <div className="text-center py-5 px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
-              <p className="font-serif text-4xl font-light text-gold-400 counter" data-target="5">0</p>
-              <p className="text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Signature Scents</p>
+            <div className="text-center py-4 sm:py-5 px-2 sm:px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
+              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400 counter" data-target="5">0</p>
+              <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Signature Scents</p>
             </div>
-            <div className="text-center py-5 px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
-              <p className="font-serif text-4xl font-light text-gold-400">100%</p>
-              <p className="text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Natural Oils</p>
+            <div className="text-center py-4 sm:py-5 px-2 sm:px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
+              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400">100%</p>
+              <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Natural Oils</p>
             </div>
-            <div className="text-center py-5 px-4">
-              <p className="font-serif text-4xl font-light text-gold-400 counter" data-target="50">0</p>
-              <p className="text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Countries</p>
+            <div className="text-center py-4 sm:py-5 px-2 sm:px-4">
+              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400 counter" data-target="50">0</p>
+              <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Countries</p>
             </div>
           </div>
           <a href="#collection" className="btn-gold inline-flex items-center gap-3 group magnetic">
