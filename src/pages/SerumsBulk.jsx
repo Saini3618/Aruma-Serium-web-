@@ -2,218 +2,7 @@ import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import SafeImage from '../components/SafeImage';
 import { createWhatsAppLink } from '../data/contactConfig';
-import { products as mainProducts } from '../data/products';
-
-const localProducts = [
-  // --- PREVIOUS BOTTLES (Restored) ---
-  {
-    img: 'images/bottel1.webp',
-    alt: 'Black Oudh Aroma - Amor Exotic',
-    cat: 'Signature Collection',
-    name: 'Black Oudh Aroma',
-    tagline: 'Light Me, Love Me, Lose Yourself — a deep, smouldering oriental fragrance that commands the space.',
-    variants: ['15ML Signature Bottle', '30ML Luxury Pack', 'Bulk Wholesale Supply'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/bottel2.webp',
-    alt: 'Aqua Aroma - Amor Exotic',
-    cat: 'Aqua Collection',
-    name: 'Aqua Aroma',
-    tagline: 'Let Desire Linger in the Air — a fresh floral aquatic blend by Amor Exotic, Aroma of Paris.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma%20Amor%20Exotic',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/aroma_premium_bulk_v2.webp',
-    alt: 'Fruity Exotica - Aroma Exotic',
-    cat: 'Exotic Collection',
-    name: 'Fruity Exotica',
-    tagline: 'A burst of tropical paradise — premium botanical ambience oil crafted for luxurious gifting and high-end retail.',
-    variants: ['15ML Luxury Pack', '100ML Elite Bottle', 'Bulk Wholesale Supply'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Fruity%20Exotica',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/ocean_breeze_premium.webp',
-    alt: 'Ocean Breeze - Aruoma Exotic',
-    cat: 'Fresh Collection',
-    name: 'Ocean Breeze',
-    tagline: 'Premium artisanal oil blend — crisp ocean waves and coastal botanicals for serene luxury spaces.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ocean%20Breeze%20Aroma',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/aroma_pro_bulk.webp',
-    alt: 'Amor Botanical Aroma',
-    cat: 'Botanical Collection',
-    name: 'Amor Botanical Aroma',
-    tagline: 'Precision-crafted lavender and botanical florals — premium ambience oil for consistent luxury scenting in large spaces.',
-    variants: ['15ML Performance Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Amor%20Botanical%20Aroma',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/aroma_floral_bulk.webp',
-    alt: 'Floral Fresh Aroma - Aroma Exotic',
-    cat: 'Botanical Collection',
-    name: 'Floral Fresh Aroma',
-    tagline: 'Aroma Strong Enough to Steal a Kiss — a vibrant symphony of garden-fresh blooms and meadow air.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Floral%20Fresh%20Aroma',
-    delay: '0.1s',
-  },
-  // --- NEW EXOTIC CATALOGUE ---
-  {
-    img: 'images/aroma_black_oudh_pro.webp',
-    alt: 'Black Oudh Aroma - Amor Exotic Aroma of Paris',
-    cat: 'Signature Collection',
-    name: 'Black Oudh Aroma',
-    tagline: 'Light Me, Love Me, Lose Yourself — a deep, smouldering oriental fragrance that commands the space.',
-    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma%20Pro',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_cherry_blossom.webp',
-    alt: 'Floral Fresh Aroma - Amor Exotic',
-    cat: 'Floral Collection',
-    name: 'Floral Fresh Aroma',
-    tagline: 'Aroma Strong Enough to Steal a Kiss — delicate romantic petals and cherry blossoms in every breath.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Floral%20Fresh%20Aroma%20Cherry',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_aqua_signature.webp',
-    alt: 'Aqua Aruoma - Aroma Exotic',
-    cat: 'Aqua Collection',
-    name: 'Aqua Aruoma',
-    tagline: 'Sparkling mint and crystalline water notes for a pure, rejuvenating atmosphere.',
-    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aruoma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_deep_aqua.webp',
-    alt: 'Aqua Aroma - Amor Exotic Aroma of Paris',
-    cat: 'Aqua Collection',
-    name: 'Aqua Aroma',
-    tagline: 'Let Desire Linger in the Air — a sophisticated blue-floral blend distilled in Paris.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma%20Deep',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_tropical_breeze.webp',
-    alt: 'Ocean Breeze - Amor Exotic Aroma of Paris',
-    cat: 'Fresh Collection',
-    name: 'Ocean Breeze',
-    tagline: 'Caution: May Cause Unexpected Romance — sun-drenched palms and salt-kissed air.',
-    variants: ['15ML Performance Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ocean%20Breeze%20Tropical',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_majestic_rose.webp',
-    alt: 'Rose Aroma - Aroma Exotic',
-    cat: 'Floral Collection',
-    name: 'Rose Aroma',
-    tagline: 'Let Romance Blossom — a passionate symphony of the world\'s finest crimson roses.',
-    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Rose%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_island_vista.webp',
-    alt: 'Vista Aroma - Aroma Exotic',
-    cat: 'Exotic Collection',
-    name: 'Vista Aroma',
-    tagline: 'Creamy coconut and island breeze — an instant escape to a tropical paradise.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Vista%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_exotic_lily.webp',
-    alt: 'Tropical Lily Aroma - Aroma Exotic',
-    cat: 'Exotic Collection',
-    name: 'Tropical Lily Aroma',
-    tagline: 'Intoxicating pink lilies and rare botanical blooms for an elite ambience.',
-    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Tropical%20Lily%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_golden_sandalwood.webp',
-    alt: 'Sandalwood Aroma - Aroma Exotic',
-    cat: 'Oriental Collection',
-    name: 'Sandalwood Aroma',
-    tagline: 'Warm, meditative wood notes that ground the soul and elevate the space.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Sandalwood%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_royal_nargis.webp',
-    alt: 'Nargis Aroma - Aroma Exotic',
-    cat: 'Botanical Collection',
-    name: 'Nargis Aroma',
-    tagline: 'Vibrant spring daffodils and wild narcissus for a cheerful, uplifting aura.',
-    variants: ['15ML Luxury Edition', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Nargis%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_pure_mogra.webp',
-    alt: 'Mogra Aroma - Aroma Exotic',
-    cat: 'Floral Collection',
-    name: 'Mogra Aroma',
-    tagline: 'The timeless essence of pure Indian Jasmine, distilled for ultimate luxury.',
-    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Mogra%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_lemongrass_zest.webp',
-    alt: 'Lemongrass Aroma - Aroma Exotic',
-    cat: 'Zen Collection',
-    name: 'Lemongrass Aroma',
-    tagline: 'Energizing citrus herbs to revitalize the mind and cleanse the atmosphere.',
-    variants: ['15ML Retail Bottle', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Lemongrass%20Aroma',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/aroma_zen_greentea.webp',
-    alt: 'Green Tea Aroma - Aroma Exotic',
-    cat: 'Zen Collection',
-    name: 'Green Tea Aroma',
-    tagline: 'Calming green tea extracts for a balanced, peaceful sanctuary within any room.',
-    variants: ['15ML Luxury Edition', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Green%20Tea%20Aroma',
-    delay: '0.15s',
-  },
-];
-
-// Map main products to bulk format and filter out existing ones by name
-const mappedMainProducts = mainProducts
-  .filter(mp => !localProducts.some(lp => lp.name.toLowerCase().includes(mp.name.toLowerCase())))
-  .map(p => ({
-    img: p.img,
-    alt: p.alt,
-    cat: p.category.charAt(0).toUpperCase() + p.category.slice(1) + ' Collection',
-    name: p.name,
-    tagline: p.tagline.replace(/"/g, ''),
-    variants: ['15ML Luxury Edition', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
-    waText: `Hello%20I%20am%20interested%20in%20total%20bulk%20order%20for%20${p.name.replace(/ /g, '%20')}`,
-    delay: p.delay
-  }));
-
-const products = [...localProducts, ...mappedMainProducts];
+import { aromaBulkProducts as products } from '../data/aromaBulkCatalog';
 
 export default function SerumsBulk() {
   useEffect(() => {
@@ -361,7 +150,7 @@ export default function SerumsBulk() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {products.map((p, i) => (
-              <article key={i} className="product-card reveal-up group bg-white border border-black/5 hover:border-gold-400/20 transition-all duration-700 shadow-sm hover:shadow-2xl rounded-px" style={{ animationDelay: p.delay }}>
+              <article key={`${p.name}-${i}`} className="product-card reveal-up group bg-white border border-black/5 hover:border-gold-400/20 transition-all duration-700 shadow-sm hover:shadow-2xl rounded-px" style={{ animationDelay: p.delay }}>
                 <div className="relative aspect-[4/5] overflow-hidden bg-black/5">
                   <SafeImage src={p.img} alt={p.alt} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gold-400/5 group-hover:bg-transparent transition-colors duration-700"></div>
@@ -432,7 +221,7 @@ export default function SerumsBulk() {
             {/* Right Image Full Bleed */}
             <div className="flex-1 relative min-h-[450px] lg:min-h-auto overflow-hidden group">
               <div className="absolute inset-0 bg-black"></div>
-              <SafeImage src="images/last immggg.webp" alt="Oudh Quality" className="w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105" />
+              <SafeImage src={`images/${encodeURIComponent('A1 - Copy.webp')}`} alt="Fruity Exotica — Aroma Exotic premium bulk oil" className="w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-[#1a1610] via-black/40 to-transparent lg:w-1/2"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-transparent to-transparent opacity-80 lg:hidden"></div>
 

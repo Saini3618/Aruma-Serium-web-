@@ -1,0 +1,149 @@
+/**
+ * Aroma bulk catalogue — A1–A56 bulk shots first, then 15ML retail bottle line at the end.
+ * If a label on the bottle differs, edit name / tagline / cat for that index only.
+ */
+
+function bulkImg(filename) {
+  return `images/${encodeURIComponent(filename)}`;
+}
+
+function encodeWaProductName(name) {
+  return name.replace(/ /g, '%20').replace(/&/g, '%26');
+}
+
+/** Homepage collection line — same visuals, bulk / wholesale CTAs */
+const RETAIL_LINE_BULK = [
+  {
+    img: bulkImg('Floral fresh Aroma1.png'),
+    alt: 'Floral Fresh Aroma — Amor Exotic Aroma of Paris',
+    cat: 'Floral Collection',
+    name: 'Floral Fresh Aroma',
+    tagline: 'Aroma brings delight to soul and vitality — garden-fresh blooms and white florals in our signature 15ML bottle.',
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName('Floral Fresh Aroma')}`,
+    delay: '0s',
+  },
+  {
+    img: bulkImg('updated.webp'),
+    alt: 'Lavender Aroma — Amor Exotic Aroma of Paris',
+    cat: 'Floral Collection',
+    name: 'Lavender Aroma',
+    tagline: 'Pure & natural oil — calming lavender fields and soft herbal depth for serene spaces.',
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName('Lavender Aroma')}`,
+    delay: '0.05s',
+  },
+  {
+    img: bulkImg('ocean_breeze.png'),
+    alt: 'Ocean Breeze Aroma — Amor Exotic Aroma of Paris',
+    cat: 'Fresh Collection',
+    name: 'Ocean Breeze Aroma',
+    tagline: 'Premium essential oil — sea salt, coastal breeze, and bright citrus for a crisp marine ambience.',
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName('Ocean Breeze Aroma')}`,
+    delay: '0.1s',
+  },
+  {
+    img: bulkImg('fruity_exotica.png'),
+    alt: 'Fruit Exotica Aroma — Amor Exotic Aroma of Paris',
+    cat: 'Fruity Collection',
+    name: 'Fruit Exotica Aroma',
+    tagline: 'Premium essential oil — tropical fruits and sun-ripe sweetness for an uplifting, exotic atmosphere.',
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName('Fruit Exotica Aroma')}`,
+    delay: '0.15s',
+  },
+  {
+    img: bulkImg('aqua_aroma.png'),
+    alt: 'Aqua Aroma — Amor Exotic Aroma of Paris',
+    cat: 'Fresh Collection',
+    name: 'Aqua Aroma',
+    tagline: 'Aroma of Paris — cool water, white musk, and lotus for a clean, airy 15ML signature.',
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName('Aqua Aroma')}`,
+    delay: '0.2s',
+  },
+];
+
+const FILENAMES = [
+  'A1 - Copy.webp',
+  'A2 - Copy.webp',
+  ...Array.from({ length: 54 }, (_, i) => `A${i + 3}.webp`),
+];
+
+/** Label-aligned copy for A1–A56 (from bottle art + OCR); `cat` = grid badge */
+const ENTRIES = [
+  { name: 'Fruity Exotica', cat: 'Aqua Collection', tagline: 'Crystalline water notes and cool mint — Parisian aqua signature in a 1 litre premium pour for large-scale diffusion.' },
+  { name: 'Ocean Aroma', cat: 'Fresh Collection', tagline: 'Deep marine breeze and salt-kissed air — bold ocean identity crafted for statement lobbies and retail displays.' },
+  { name: 'Floral Fresh Aroma', cat: 'Floral Collection', tagline: 'Let desire linger in the air — gardenia, jasmine, and soft white petals in our iconic floral fresh 1 litre oil.' },
+  { name: 'Green Tea Aroma', cat: 'Zen Collection', tagline: 'Refresh your senses with nature’s elegance — steamed green tea, soft herbs, and a peaceful spa-like finish.' },
+  { name: 'Lavender Aroma', cat: 'Floral Collection', tagline: 'Unwind with the essence of lavender — pure fields, herbal calm, and a powdery dry-down for bedrooms and salons.' },
+  { name: 'Lemongrass Aroma', cat: 'Zen Collection', tagline: 'Invigorate your senses with nature’s zest — bright citrus herbs and clean green lift for kitchens and workspaces.' },
+  { name: 'Mogra Aroma', cat: 'Floral Collection', tagline: 'Celebrate the fragrance of jasmine — lush Indian mogra, creamy white florals, and romantic depth.' },
+  { name: 'Rose Aroma', cat: 'Floral Collection', tagline: 'Let romance blossom — crimson rose absolutes and soft spice for a passionate floral signature.' },
+  { name: 'Nargis Aroma', cat: 'Botanical Collection', tagline: 'Cheerful narcissus and spring daffodil facets — bright botanical energy with an uplifting aura.' },
+  { name: 'Tropical Lily Aroma', cat: 'Exotic Collection', tagline: 'Intoxicating tropical lily and rare blooms — elite floral depth for luxury gifting and hospitality.' },
+  { name: 'Vista Aroma', cat: 'Fresh Collection', tagline: 'Experience the tranquil essence of the sea — soft marine horizon, coastal florals, and serene escape.' },
+  { name: 'White Oud Aroma', cat: 'Oriental Collection', tagline: 'Refined pale oudh woods — luminous smoke, soft amber resin, and modern oriental polish.' },
+  { name: 'Aqua Aroma', cat: 'Aqua Collection', tagline: 'Let desire linger in the air — cool water, blue florals, and sheer musk in a 1 litre Parisian blend.' },
+  { name: 'Pink Fairy Gumdrop Aroma', cat: 'Exotic Collection', tagline: 'Indulge in the sweet enchantment of candyland — playful sugar, berry gloss, and gourmand sparkle.' },
+  { name: 'Pumpkin Spice Candle', cat: 'Signature Collection', tagline: 'Let desire linger in the air — warm pumpkin, baking spice, and autumn comfort in a premium poured candle.' },
+  { name: 'Princess Rose Aroma', cat: 'Floral Collection', tagline: 'Immerse in the luxurious essence of roses — velvet petals, soft honey, and fairy-tale romance.' },
+  { name: 'Rose Saffron Aroma', cat: 'Oriental Collection', tagline: 'Let desire linger in the air — damask rose threads with golden saffron and warm resinous depth.' },
+  { name: 'Baccarat Aroma', cat: 'Signature Collection', tagline: 'High-jewellery amber florals — radiant saffron, jasmine, and cedarwood for a red-carpet ambience.' },
+  { name: 'Orange Cinnamon Aroma', cat: 'Exotic Collection', tagline: 'Let desire linger in the air — sparkling orange zest folded into warm cinnamon and holiday spice.' },
+  { name: 'Dark Amber & Charged Birch Candle', cat: 'Oriental Collection', tagline: 'Let desire linger in the air — smoky birch, molten amber, and midnight woods in a luxury candle.' },
+  { name: 'Rose Oudh Aroma', cat: 'Oriental Collection', tagline: 'Let desire linger in the air — velvety rose married to deep agarwood for a royal oriental accord.' },
+  { name: 'Spicy Mountain Air Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — alpine wind, crisp pine, and a kick of peppered spice.' },
+  { name: 'Talisman Oudh Aroma', cat: 'Oriental Collection', tagline: 'Mystical agarwood talisman — rare oudh, smoked incense, and gold resin for signature spaces.' },
+  { name: 'Cedar & Balsam Candle', cat: 'Botanical Collection', tagline: 'Let desire linger in the air — frosted cedar, Canadian balsam, and evergreen cabin warmth.' },
+  { name: 'Geranium Lavender Aroma', cat: 'Floral Collection', tagline: 'Let desire linger in the air — leafy geranium, French lavender, and a clean botanical heart.' },
+  { name: 'Apple Cinnamon Candle', cat: 'Exotic Collection', tagline: 'Let desire linger in the air — oven-warm apple, Ceylon cinnamon, and cozy gourmand glow.' },
+  { name: 'Cherry Blossom Aroma', cat: 'Floral Collection', tagline: 'Let desire linger in the air — sakura petals, pale wood, and delicate spring rain.' },
+  { name: 'Geranium & Bergamot Aroma', cat: 'Floral Collection', tagline: 'Let desire linger in the air — rose geranium leaves with Italian bergamot sparkle.' },
+  { name: 'Gracious Aroma', cat: 'Signature Collection', tagline: 'Let desire linger in the air — gracious white florals, soft musk, and effortless Parisian poise.' },
+  { name: 'Marine Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — deep marine accord, sea spray, and breezy coastal clarity.' },
+  { name: 'Citrus Grove Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — sunlit citrus grove, leafy greens, and sparkling peel.' },
+  { name: 'Jasmine Lemongrass Oil', cat: 'Botanical Collection', tagline: 'Let desire linger in the air — night-blooming jasmine layered over zesty lemongrass for balance.' },
+  { name: 'Parisian Blue Aroma', cat: 'Aqua Collection', tagline: 'Let desire linger in the air — airy blue florals, cool musk, and a clean couture diffusion profile.' },
+  { name: 'Sabré Aroma', cat: 'Signature Collection', tagline: 'Let desire linger in the air — sharp woods, metallic sage, and modern masculine-luxe edge.' },
+  { name: 'Lavender Aromatic Oil', cat: 'Floral Collection', tagline: 'Pure and calming aromatic oil — high-altitude lavender for sleep, spa, and serene retail.' },
+  { name: 'Fresh Linen Candle', cat: 'Fresh Collection', tagline: 'Pure and calming aromatic ambience — sun-dried cotton, soft powder, and crisp clean sheets.' },
+  { name: 'Gingerbread Aroma', cat: 'Exotic Collection', tagline: 'Warm gingerbread spice — molasses, ginger snap, and holiday bakery comfort.' },
+  { name: 'Chamomile Aromatic Oil', cat: 'Zen Collection', tagline: 'Pure and calming aromatic oil — Roman chamomile, hay, and honeyed herbal rest.' },
+  { name: 'Amor Reserve Blend', cat: 'Signature Collection', tagline: 'House reserve Parisian blend — versatile 1 litre diffusion oil for bespoke hospitality programs.' },
+  { name: 'Woodland Ember Candle', cat: 'Botanical Collection', tagline: 'Crackling wood-inspired warmth — embered logs, smoked vetiver, and forest at dusk.' },
+  { name: 'Silver Birch Aroma', cat: 'Botanical Collection', tagline: 'Silver birch bark and cool sap — Nordic forest minimalism with a silver-green breeze.' },
+  { name: 'Vanilla Candle', cat: 'Exotic Collection', tagline: 'Creamy Madagascar vanilla bean — gourmand glow with a soft wax pool and long throw.' },
+  { name: 'Musk Aroma', cat: 'Oriental Collection', tagline: 'Clean skin musk and soft powder — intimate sillage that elevates bedrooms and boutiques.' },
+  { name: 'Coffee Aroma', cat: 'Exotic Collection', tagline: 'Freshly roasted arabica and caramelized sugar — bold café energy for lounges and studios.' },
+  { name: 'Saffron Kiwi Aroma', cat: 'Exotic Collection', tagline: 'Let desire linger in the air — golden saffron threads with juicy kiwi and tropical lift.' },
+  { name: 'Sea Salt & Lime Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — coastal sea salt, Mexican lime, and breezy driftwood.' },
+  { name: 'Honey Aroma', cat: 'Exotic Collection', tagline: 'Let desire linger in the air — wildflower honey, beeswax, and golden amber comfort.' },
+  { name: 'Strawberry Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — ripe field strawberries, green leaf, and jammy sweetness.' },
+  { name: 'Vanilla Aroma', cat: 'Exotic Collection', tagline: 'Let desire linger in the air — bourbon vanilla, soft tonka, and silky gourmand warmth.' },
+  { name: 'Green Apple Aroma', cat: 'Fresh Collection', tagline: 'Let desire linger in the air — crisp Granny Smith, dewy peel, and sparkling orchard air.' },
+  { name: 'Floral Fresh — Essence of Flowers', cat: 'Floral Collection', tagline: 'Experience the essence of flowers — layered bouquet absolutes in a 1 litre premium botanical oil.' },
+  { name: 'Linen & Sage Aromatic Oil', cat: 'Fresh Collection', tagline: 'Pure aromatic oil — sun-bleached linen, clary sage, and quiet spa calm.' },
+  { name: 'Floral Fresh Premium Botanical Oil', cat: 'Floral Collection', tagline: 'Aroma strong enough to steal a kiss — premium botanical ambience oil, collection no. 1, in a full litre pour.' },
+  { name: 'Aqua Aroma — Bulk', cat: 'Aqua Collection', tagline: 'Cool water signature — crystalline aqua accord scaled for bulk diffusers and retail refill.' },
+  { name: 'Black Oudh Aroma', cat: 'Oriental Collection', tagline: 'Light me, love me, lose yourself — deep agarwood smoke, amber, and commanding oriental power.' },
+  { name: 'Ocean Breeze Aroma', cat: 'Fresh Collection', tagline: 'Caution: may cause unexpected romance — salt-kissed palms, turquoise waves, and sun-drenched coast.' },
+];
+
+const bulkCatalogFromImages = FILENAMES.map((file, i) => {
+  const { name, tagline, cat } = ENTRIES[i];
+  const delay = `${0.05 + (i % 6) * 0.05}s`;
+  return {
+    img: `images/${encodeURIComponent(file)}`,
+    alt: `${name} — Amor Exotic bulk aroma oil`,
+    cat,
+    name,
+    tagline,
+    variants: ['15ML Luxury Pack', '1 Ltr. Bulk Supply', 'Wholesale Bulk Pack'],
+    waText: `Hello%20I%20am%20interested%20in%20bulk%20order%20for%20${encodeWaProductName(name)}`,
+    delay,
+  };
+});
+
+export const aromaBulkProducts = [...bulkCatalogFromImages, ...RETAIL_LINE_BULK];

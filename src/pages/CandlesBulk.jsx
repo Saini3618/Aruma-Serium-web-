@@ -5,34 +5,84 @@ import { createWhatsAppLink } from '../data/contactConfig';
 
 const products = [
   {
-    img: 'images/Gemini_Generated_Image_komye4komye4komy.webp',
-    alt: 'Luxe Candle Mist',
-    cat: 'Aroma Diffusion',
-    name: 'CANDALS Premium Mist',
-    tagline: 'Silent ultrasonic technology for the most refined candle-like atmosphere.',
+    img: 'images/8.webp',
+    alt: 'Coconut & Driftwood',
+    cat: 'Floral Series',
+    name: 'CANDALS COCONUT & DRIFTWOOD',
+    tagline: 'Warm coconut milk, sea salt & driftwood.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Premium%20Mist',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20COCONUT%20&%20DRIFTWOOD',
     delay: '0.1s',
   },
   {
-    img: 'images/ocean_breeze_premium.webp',
-    alt: 'Wood Grain Candle',
-    cat: 'Natural Series',
-    name: 'CANDALS Wood Edition',
-    tagline: 'Organic aesthetics for hotel lobbies and wellness centers.',
-    variants: ['Dark Walnut Finish', 'Light Oak Finish', 'Mini Portable USB'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Wood%20Edition',
+    img: 'images/1.webp',
+    alt: 'Banana Chocolate Crepes',
+    cat: 'Gourmand Series',
+    name: 'CANDALS Banana Chocolate Crepes',
+    tagline: 'Banana, vanilla, cinnamon & maple syrup.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Banana%20Chocolate%20Crepes',
     delay: '0.15s',
   },
   {
-    img: 'images/change.webp',
-    alt: 'Breathe Pro Signature',
-    cat: 'Performance Plus',
-    name: 'CANDALS Breathe Pro',
-    tagline: 'High-capacity aromatic diffusion for large corporate spaces.',
-    variants: ['High Velocity', 'HEPA Integrated', 'Dual Port Design'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Breathe%20Pro',
+    img: 'images/3.webp',
+    alt: 'French Manicure',
+    cat: 'Signature Series',
+    name: 'CANDALS COOL BREEZE',
+    tagline: 'Lavender, sweet pea & vanilla.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20French%20Manicure',
     delay: '0.2s',
+  },
+  {
+    img: 'images/2.webp',
+    alt: 'WHITE NEROLI & TUBEROSE',
+    cat: 'Fresh Series',
+    name: 'CANDALS WHITE NEROLI & TUBEROSE',
+    tagline: 'Teakwood & herbal lavender infused with mahogany & musk.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Cool%20Breeze',
+    delay: '0.25s',
+  },
+  {
+    img: 'images/4.webp',
+    alt: 'SUGAR CINNAMON',
+    cat: 'Signature Series',
+    name: 'CANDALS SUGAR CINNAMON',
+    tagline: 'Fresh mint & sweet melon.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Minty%20Melon',
+    delay: '0.3s',
+  },
+  {
+    img: 'images/5.webp',
+    alt: 'CHERRY BLOSSOM & JASMINE',
+    cat: 'Floral Series',
+    name: 'CANDALS CHERRY BLOSSOM & JASMINE',
+    tagline: 'Spicy clove, cinnamon & cedar with sweet citrus & ginger.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20CHERRY%20BLOSSOM%20&%20JASMINE',
+    delay: '0.35s',
+  },
+  {
+    img: 'images/6.webp',
+    alt: 'SUN SOAKED CITRUS',
+    cat: 'Citrus Series',
+    name: 'CANDALS SUN SOAKED CITRUS',
+    tagline: 'Sparkling orange, mandarin & lemon with a hint of vanilla.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Sunny%20Breeze',
+    delay: '0.4s',
+  },
+  {
+    img: 'images/7.webp',
+    alt: 'ROYAL ROSE',
+    cat: 'Botanical Series',
+    name: 'CANDALS ROYAL ROSE',
+    tagline: 'Velvety rose petals, amber & sandalwood.',
+    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'Limited Golden Series'],
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Pure%20Passion',
+    delay: '0.45s',
   },
 ];
 
@@ -104,7 +154,7 @@ export default function CandlesBulk() {
       {/* Hero Section */}
       <section id="candle-hero" className="relative w-full min-h-[95vh] flex items-center overflow-hidden bg-[#1a1610]">
         <div className="absolute inset-0 z-0 opacity-50">
-          <SafeImage src="images/himudifier.webp" alt="Candals Lux" className="w-full h-full object-cover object-center parallax-img" loading="eager" />
+          <SafeImage src="images/candal hero back.webp" alt="Candals Lux" className="w-full h-full object-cover object-center parallax-img" loading="eager" />
           <div className="absolute inset-0"
             style={{ background: 'linear-gradient(105deg,rgba(26,22,16,1) 0%,rgba(26,22,16,0.6) 45%,rgba(26,22,16,0.3) 100%)' }}>
           </div>
@@ -137,7 +187,7 @@ export default function CandlesBulk() {
                 style={{ background: 'linear-gradient(135deg,rgba(212,168,66,0.7),rgba(30,25,15,0.3),rgba(212,168,66,0.5))' }}>
                 <div className="w-full h-full rounded-full overflow-hidden"
                   style={{ background: 'linear-gradient(160deg,#2e2820 0%,#1a1610 100%)' }}>
-                  <img src="/images/Gemini_Generated_Image_wdciixwdciixwdci.webp" alt="Candals Floating Tech"
+                  <img src="/images/3.webp" alt="Candals Floating Tech"
                     className="w-full h-full object-cover scale-110" loading="lazy" />
                 </div>
               </div>
@@ -280,7 +330,7 @@ export default function CandlesBulk() {
             </div>
             <div className="flex-1 reveal-up" style={{ animationDelay: '0.4s' }}>
               <div className="relative aspect-[4/5] rounded-[30px] border border-gold-400/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] group">
-                <SafeImage src="images/absolute_ambience.png" alt="Absolute Ambience" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-110" />
+                <SafeImage src="images/7.webp" alt="Premium fragrance ambience" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-black/20 to-transparent opacity-90"></div>
                 <div className="absolute bottom-12 left-12 right-12 p-8 border border-white/10 backdrop-blur-xl bg-black/40 rounded-2xl shadow-2xl">
                   <p className="text-[9px] tracking-[0.6em] uppercase text-gold-400 mb-2">Wellness Ritual</p>
