@@ -12,8 +12,8 @@ export default function Navbar() {
           <Link to="/#about" className="nav-link magnetic">Our Story</Link>
           <Link to="/#collection" className="nav-link magnetic">Collection</Link>
           <Link to="/#products" className="nav-link magnetic">Products</Link>
-          <Link to="/#ingredients" className="nav-link magnetic">Ingredients</Link>
-          <Link to="/#contact" className="nav-link magnetic">Contact</Link>
+          <Link to="/ingredients" className="nav-link magnetic">Ingredients</Link>
+          <Link to="/#footer-address" className="nav-link magnetic">Contact</Link>
           <div className="relative group/bulk">
             <div className="nav-link cursor-pointer flex items-center gap-1.5 transition-colors duration-300">
               Bulk Orders
@@ -36,11 +36,11 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <Link to="/#collection"
+        <Link to="/about"
           className="nav-shop-btn magnetic hidden lg:flex items-center gap-2 border border-gold-400/60 text-gold-400 text-[10px] tracking-[0.3em] uppercase px-6 py-3 hover:bg-gold-400 hover:text-white transition-all duration-300 font-medium group">
-          <span>Shop Now</span>
+          <span>About Us</span>
           <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </Link>
         <button id="menu-btn" className="lg:hidden text-gold-400">

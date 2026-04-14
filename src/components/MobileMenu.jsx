@@ -10,9 +10,9 @@ export default function MobileMenu() {
         style={{ color: 'rgba(42,33,24,0.65)' }}>Collection</Link>
       <Link to="/#products" className="mobile-link font-serif text-3xl tracking-widest transition-colors"
         style={{ color: 'rgba(42,33,24,0.65)' }}>Products</Link>
-      <Link to="/#ingredients" className="mobile-link font-serif text-3xl tracking-widest transition-colors"
+      <Link to="/ingredients" className="mobile-link font-serif text-3xl tracking-widest transition-colors"
         style={{ color: 'rgba(42,33,24,0.65)' }}>Ingredients</Link>
-      <Link to="/#contact" className="mobile-link font-serif text-3xl tracking-widest transition-colors"
+      <Link to="/#footer-address" className="mobile-link font-serif text-3xl tracking-widest transition-colors"
         style={{ color: 'rgba(42,33,24,0.65)' }}>Contact</Link>
       <div className="flex flex-col items-center gap-4 py-4">
         <span className="text-[10px] tracking-[0.4em] text-gold-400/50 uppercase pb-2">Bulk Orders</span>

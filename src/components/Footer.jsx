@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="relative pt-16 pb-6 px-8 overflow-hidden"
+    <footer id="footer-address" className="relative pt-16 pb-6 px-8 overflow-hidden"
       style={{ background: 'rgba(250, 247, 242, 0.95)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', borderTop: '1px solid rgba(178, 168, 148, 0.25)' }}>
 
       {/* Subtle Animated Background Glow */}
@@ -59,22 +59,43 @@ export default function Footer() {
             <Link to="/#contact" className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Contact Us</Link>
           </div>
 
-          {/* Business Enquiry */}
+          {/* Business Enquiry & HQ Address */}
           <div className="md:col-span-2">
-            <div className="h-full rounded-2xl p-5 border border-[#c8973a]/20 bg-white/45 backdrop-blur-md shadow-[0_10px_30px_rgba(200,151,58,0.08)]">
-              <p className="text-[8px] tracking-[0.4em] uppercase font-semibold mb-3" style={{ color: 'rgba(158,116,37,0.9)' }}>
-                Need Bulk Support?
-              </p>
-              <p className="text-[12px] leading-relaxed font-light mb-4" style={{ color: 'var(--text-70)' }}>
-                Connect with our team for fragrance selection and bulk order guidance.
-              </p>
-              <div className="space-y-2">
-                <Link to="/#contact" className="block text-[11px] tracking-[0.18em] uppercase font-medium transition-colors hover:text-[#c8973a]" style={{ color: 'var(--text-70)' }}>
-                  Contact Team
-                </Link>
-                <Link to="/bulk/serums#serum-hero" className="block text-[11px] tracking-[0.18em] uppercase font-medium transition-colors hover:text-[#c8973a]" style={{ color: 'var(--text-70)' }}>
-                  View Bulk Range
-                </Link>
+            <div className="h-full rounded-2xl p-5 md:p-6 border border-[#c8973a]/20 bg-white/45 backdrop-blur-md shadow-[0_10px_30px_rgba(200,151,58,0.08)] relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-transparent pointer-events-none rounded-2xl"></div>
+              
+              <div className="relative z-10 flex flex-col h-full justify-between gap-6">
+                
+                {/* Bulk Support */}
+                <div>
+                  <p className="text-[8px] tracking-[0.4em] uppercase font-semibold mb-3" style={{ color: 'rgba(158,116,37,0.9)' }}>
+                    Need Bulk Support?
+                  </p>
+                  <p className="text-[12px] leading-relaxed font-light mb-4" style={{ color: 'var(--text-70)' }}>
+                    Connect with our team for fragrance selection and bulk order guidance.
+                  </p>
+                  <div className="space-y-2">
+                    <Link to="/#contact" className="block text-[11px] tracking-[0.18em] uppercase font-medium transition-colors hover:text-[#c8973a]" style={{ color: 'var(--text-70)' }}>
+                      Contact Team
+                    </Link>
+                    <Link to="/bulk/serums#serum-hero" className="block text-[11px] tracking-[0.18em] uppercase font-medium transition-colors hover:text-[#c8973a]" style={{ color: 'var(--text-70)' }}>
+                      View Bulk Range
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Paris Address */}
+                <div className="pt-5 border-t border-[#c8973a]/20">
+                  <p className="text-[9px] tracking-[0.3em] uppercase font-semibold mb-3 flex items-center gap-2" style={{ color: 'rgba(158,116,37,0.9)' }}>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    Maison Parisienne
+                  </p>
+                  <address className="text-[12px] leading-[1.8] font-light not-italic font-serif" style={{ color: 'var(--text-70)' }}>
+                    7 Place Vendôme<br/>
+                    75001 Paris, France
+                  </address>
+                </div>
+                
               </div>
             </div>
           </div>

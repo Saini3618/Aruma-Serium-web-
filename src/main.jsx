@@ -5,6 +5,8 @@ import App from './App.jsx'
 import SerumsBulk from './pages/SerumsBulk.jsx'
 import CandlesBulk from './pages/CandlesBulk.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
+import IngredientsDetail from './pages/IngredientsDetail.jsx'
+import AboutUs from './pages/AboutUs.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,6 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/bulk/serums" element={<SerumsBulk />} />
         <Route path="/bulk/candles" element={<CandlesBulk />} />
         <Route path="/product/:slug" element={<ProductDetail />} />
+        <Route path="/ingredients" element={<IngredientsDetail />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

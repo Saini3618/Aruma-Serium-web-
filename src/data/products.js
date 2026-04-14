@@ -87,7 +87,7 @@ export const products = [
   {
     id: 'black-oudh-aroma',
     slug: 'black-oudh-aroma',
-    img: 'images/Aroma image.webp',
+    img: 'images/420.webp',
     alt: 'Black Oudh Aroma',
     glow: 'rgba(200,151,58,0.28)',
     category: 'oriental',

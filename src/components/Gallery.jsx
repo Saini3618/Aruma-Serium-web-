@@ -1,10 +1,10 @@
 export default function Gallery() {
   const items = [
     { img: 'images/first.webp', alt: 'Floral Fresh', cat: 'Floral Collection', title: 'Floral Fresh Aroma', sub: '15ML', extraClass: 'gal-tall', delay: '0s' },
-    { img: 'images/aaa.webp', alt: 'Floral Atmospheric', cat: 'Floral Collection', title: 'Floral Fresh — Atmospheric', sub: 'Dark · Captivating', extraClass: '', imgClass: 'object-center', delay: '0.08s' },
+    { img: 'images/aqua_aroma.png', alt: 'Floral Atmospheric', cat: 'Floral Collection', title: 'Floral Fresh — Atmospheric', sub: 'Dark · Captivating', extraClass: '', imgClass: 'object-center', delay: '0.08s' },
     { img: 'images/new img.webp', alt: 'Black Oudh', cat: 'Oriental · Signature', title: 'Black Oudh Aroma', sub: '15ML', extraClass: '', delay: '0.12s' },
     { img: 'images/ocean_breeze.png', alt: 'Ocean Breeze', cat: 'Fresh Collection', title: 'Ocean Breeze Aroma', sub: '15ML', extraClass: '', delay: '0.16s' },
-    { img: 'images/Aroma image.webp', alt: 'Serium Luxury', cat: 'Amor Exotic · Paris', title: 'The Art of Serium', sub: 'Luxury · Timeless', extraClass: '', delay: '0.20s' },
+    { img: 'images/420.webp', alt: 'Serium Luxury', cat: 'Amor Exotic · Paris', title: 'The Art of Serium', sub: 'Luxury · Timeless', extraClass: '', delay: '0.20s' },
   ];
 
   return (
