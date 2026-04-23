@@ -45,7 +45,7 @@ export default function About() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-0" style={{ border: '1px solid rgba(178,168,148,0.32)' }}>
             <div className="text-center py-4 sm:py-5 px-2 sm:px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
-              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400 counter" data-target="50">0</p>
+              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400">50+</p>
               <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Signature Scents</p>
             </div>
             <div className="text-center py-4 sm:py-5 px-2 sm:px-4" style={{ borderRight: '1px solid rgba(178,168,148,0.28)' }}>
@@ -53,7 +53,7 @@ export default function About() {
               <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Natural Oils</p>
             </div>
             <div className="text-center py-4 sm:py-5 px-2 sm:px-4">
-              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400 counter" data-target="50">0</p>
+              <p className="font-serif text-3xl sm:text-4xl font-light text-gold-400">50+</p>
               <p className="text-[7.5px] sm:text-[8.5px] tracking-widest uppercase mt-1.5" style={{ color: 'rgba(42,33,24,0.38)' }}>Countries</p>
             </div>
           </div>

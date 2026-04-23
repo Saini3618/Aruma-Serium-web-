@@ -27,10 +27,15 @@ export default function Footer() {
               The pinnacle of aroma artistry. Crafted for those who believe that the finest luxury is the one you wear on your skin.
             </p>
             <div className="flex gap-4 pt-2">
-              {['in', 'ig', '𝕏', 'yt'].map((s, i) => (
-                <a key={i} href="#"
+              {[
+                { label: 'in', title: 'LinkedIn', href: '/#hero' },
+                { label: 'ig', title: 'Instagram', href: '/#hero' },
+                { label: '𝕏', title: 'X (Twitter)', href: '/#hero' },
+                { label: 'yt', title: 'YouTube', href: '/#hero' },
+              ].map((s, i) => (
+                <a key={i} href={s.href} title={s.title}
                   className="w-10 h-10 rounded-full border flex items-center justify-center text-[11px] transition-all duration-500 hover:-translate-y-2 hover:bg-[#c8973a] hover:text-white hover:border-[#c8973a] hover:shadow-[0_10px_20px_rgba(200,151,58,0.3)]"
-                  style={{ borderColor: 'rgba(200,151,58,0.3)', color: 'var(--text-70)' }}>{s}</a>
+                  style={{ borderColor: 'rgba(200,151,58,0.3)', color: 'var(--text-70)' }}>{s.label}</a>
               ))}
             </div>
           </div>

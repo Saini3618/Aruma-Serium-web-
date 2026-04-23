@@ -225,8 +225,13 @@ body::after {
 }
 
 @keyframes marquee-slow {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee-slow:hover {
@@ -234,8 +239,13 @@ body::after {
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .animate-shimmer {
@@ -883,9 +893,10 @@ body::after {
   overflow: hidden;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 
+  box-shadow:
     0 10px 30px rgba(42, 33, 24, 0.03),
-    inset 0 0 20px rgba(255, 255, 255, 0.5); /* Inner glow for glass feel */
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+  /* Inner glow for glass feel */
 }
 
 .feature-box::before {
@@ -919,8 +930,8 @@ body::after {
 
 .feature-box:hover {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(250, 247, 242, 0.8));
-  box-shadow: 
-    0 30px 60px rgba(42, 33, 24, 0.12), 
+  box-shadow:
+    0 30px 60px rgba(42, 33, 24, 0.12),
     0 0 40px rgba(200, 151, 58, 0.15),
     inset 0 0 30px rgba(255, 255, 255, 0.8);
   transform: translateY(-16px) scale(1.02);
@@ -970,16 +981,20 @@ body::after {
 
 .feature-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 22px; /* Slightly larger */
-  color: var(--text); /* Dark text for light theme */
-  font-weight: 500; /* Bolder to stand out on light */
+  font-size: 22px;
+  /* Slightly larger */
+  color: var(--text);
+  /* Dark text for light theme */
+  font-weight: 500;
+  /* Bolder to stand out on light */
   margin-bottom: 12px;
   transition: color .4s;
 }
 
 .feature-desc {
   font-size: 11.5px;
-  color: var(--text-70); /* Dark grey text */
+  color: var(--text-70);
+  /* Dark grey text */
   line-height: 1.85;
   transition: color .4s;
 }
@@ -1050,10 +1065,11 @@ body::after {
   border-radius: 24px;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  box-shadow: 
-    0 50px 100px rgba(42, 33, 24, 0.1), 
+  box-shadow:
+    0 50px 100px rgba(42, 33, 24, 0.1),
     inset 0 2px 20px rgba(255, 255, 255, 0.8),
-    0 0 50px rgba(200, 151, 58, 0.15); /* Golden outer glow */
+    0 0 50px rgba(200, 151, 58, 0.15);
+  /* Golden outer glow */
   position: relative;
 }
 
@@ -1411,15 +1427,31 @@ body::after {
 
 /* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ Contact & Animations Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
 @keyframes float-slow {
-  0% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(5deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 @keyframes float-delayed {
-  0% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(8px) rotate(-5deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(8px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 .animate-float-slow {
@@ -1845,9 +1877,9 @@ body::after {
 }
 
 .aura-blob.silver {
-  background: radial-gradient(circle, rgba(176,171,158,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(176, 171, 158, 0.12) 0%, transparent 70%);
 }
 
 .aura-blob.gold {
-  background: radial-gradient(circle, rgba(200,151,58,0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 151, 58, 0.10) 0%, transparent 70%);
 }

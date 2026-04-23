@@ -2,9 +2,9 @@ export default function Gallery() {
   const items = [
     { img: 'images/first.webp', alt: 'Black Oudh Aroma bottle', cat: 'Amor Exotic · Aroma Of Paris', title: 'Black Oudh Aroma', sub: '15ML', extraClass: 'gal-tall', delay: '0s' },
     { img: 'images/aqua_aroma.webp', alt: 'Aqua Aroma bottle with mint', cat: 'Aquatic Fresh Collection', title: 'Aqua Aroma', sub: '15ML · 0.5 FL OZ', extraClass: '', imgClass: 'object-center', delay: '0.08s' },
-    { img: 'images/new img.webp', alt: 'Aqua Aroma floral bottle', cat: 'Floral Aqua Collection', title: 'Aqua Aroma', sub: '15ML · Let Desire Linger in the Air', extraClass: '', delay: '0.12s' },
+    { img: 'images/livendar.webp', alt: 'Lavender Aroma floral bottle', cat: 'Floral Aqua Collection', title: 'Lavender Aroma', sub: '15ML · Let Desire Linger in the Air', extraClass: '', delay: '0.12s' },
     { img: 'images/ocean_breeze.webp', alt: 'Ocean Breeze Aroma bottle', cat: 'Marine Fresh Collection', title: 'Ocean Breeze Aroma', sub: '30ML · 1 FL OZ', extraClass: '', delay: '0.16s' },
-    { img: 'images/fixxxxxinnnnnggggggg.webp', alt: 'Royal Oud Aroma bottle', cat: 'Oriental Reserve Collection', title: 'Royal Oud', sub: '15ML · Aroma Oil', extraClass: '', delay: '0.20s' },
+    { img: 'images/floer fresh.webp', alt: 'Floral Fresh Aroma bottle', cat: 'Floral Fresh Collection', title: 'Floral Fresh Aroma', sub: '15ML · Aroma Oil', extraClass: '', delay: '0.20s' },
   ];
 
   return (

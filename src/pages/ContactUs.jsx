@@ -13,20 +13,20 @@ export default function ContactUs() {
   return (
     <Layout>
       <div className="min-h-screen bg-[#1a1610] text-white">
-        
+
         {/* ULTRA PRO MAX HERO SECTION */}
         <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src="images/ChatGPT Image Apr 16, 2026, 09_34_50 PM.webp" 
-              alt="Rich Amber Contact Hero" 
+            <img
+              src="images/ChatGPT Image Apr 16, 2026, 09_34_50 PM.webp"
+              alt="Rich Amber Contact Hero"
               className="w-full h-full object-cover object-center scale-105"
               style={{ animation: 'float 20s ease-in-out infinite alternate', transformOrigin: 'center center' }}
             />
             {/* Cinematic Gradient Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#1a1610]/90 via-[#1a1610]/40 to-[#1a1610]"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[#1a1610]/95 via-[#1a1610]/70 to-[#1a1610]"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-[#1a1610]/30 to-transparent"></div>
           </div>
 
           <div className="relative z-10 text-center px-5 max-w-4xl mx-auto reveal-up -translate-y-20 sm:-translate-y-16">
@@ -35,13 +35,13 @@ export default function ContactUs() {
               <p className="text-[10px] tracking-[0.6em] uppercase text-gold-400 font-bold">Client Relations</p>
               <div className="h-px w-16 bg-gold-400"></div>
             </div>
-            
-            <h1 className="font-serif font-light leading-[1.1] text-5xl sm:text-7xl lg:text-8xl mb-8">
-              Connect With <br/>
+
+            <h1 className="font-serif font-light leading-[1.1] text-5xl sm:text-7xl lg:text-8xl mb-[20rem]">
+              Connect With <br />
               <span className="italic gold-shimmer-text">Excellence</span>
             </h1>
-            
-            <p className="text-white/60 text-sm sm:text-lg tracking-widest max-w-2xl mx-auto font-light leading-relaxed">
+
+            <p className="text-white/60 text-sm sm:text-lg tracking-widest max-w-2xl mx-auto font-semibold leading-relaxed">
               Bespoke consultations, bulk inquiries, and luxury partnerships. Let us elevate your atmosphere to the pinnacle of olfactory art.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function ContactUs() {
               ].map((loc, i) => (
                 <article key={i} style={{ animation: `float ${6 + i}s ease-in-out infinite ${i * 0.5}s` }} className="group rounded-[28px] p-10 bg-white border border-[#ede8df] shadow-[0_15px_40px_rgba(42,33,24,0.04)] hover:shadow-[0_30px_70px_rgba(200,151,58,0.2)] hover:border-[#c8973a]/50 transition-all duration-700 overflow-hidden relative transform hover:-translate-y-4 hover:scale-[1.02]">
                   <div className="absolute top-0 right-0 p-6 opacity-[0.02] group-hover:opacity-[0.08] transition-all duration-1000 group-hover:scale-150 animate-[spin_30s_linear_infinite]">
-                    <svg className="w-32 h-32 text-[#2a2118]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <svg className="w-32 h-32 text-[#2a2118]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
                   </div>
                   <h4 className="font-serif text-3xl text-[#2a2118] mb-8 relative z-10">{loc.title}</h4>
                   <div className="space-y-3 relative z-10">
@@ -100,7 +100,7 @@ export default function ContactUs() {
 
           <div className="max-w-4xl mx-auto px-5 relative z-10 w-full reveal-up" style={{ animationDelay: '0.4s' }}>
             <div className="relative p-12 md:p-20 rounded-[30px] border border-[#ede8df] bg-[#fbf9f4]/80 backdrop-blur-3xl shadow-[0_20px_60px_rgba(42,33,24,0.04)] overflow-hidden group hover:border-[#c8973a]/50 hover:shadow-[0_40px_100px_rgba(200,151,58,0.15)] transition-all duration-1000 transform hover:-translate-y-3 hover:scale-[1.01]">
-              
+
               <div className="relative z-10 text-center flex flex-col items-center">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="h-px w-16 bg-[#c8973a]/30"></div>
