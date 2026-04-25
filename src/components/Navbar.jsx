@@ -4,6 +4,17 @@ export default function Navbar() {
   const { pathname } = useLocation();
   const isProductPage = pathname.startsWith('/product/');
 
+  const handleScroll = (e, id) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', '/#' + id);
+      }
+    }
+  };
+
   return (
     <nav id="navbar" className={`fixed top-0 left-0 right-0 z-50 ${isProductPage ? 'product-page-nav' : ''}`}>
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between gap-3">
@@ -12,8 +23,8 @@ export default function Navbar() {
           <span className="nav-logo-sub text-[8px] sm:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-white/90 uppercase mt-0.5 flex justify-center">Aroma Of Paris</span>
         </Link>
         <div className="hidden lg:flex items-center gap-10">
-          <Link to="/#about" className="nav-link magnetic">Our Story</Link>
-          <Link to="/#products" className="nav-link magnetic">Products</Link>
+          <Link to="/#about" onClick={(e) => handleScroll(e, 'about')} className="nav-link magnetic">Our Story</Link>
+          <Link to="/#products" onClick={(e) => handleScroll(e, 'products')} className="nav-link magnetic">Products</Link>
           <Link to="/ingredients" className="nav-link magnetic">Ingredients</Link>
           <Link to="/contact" className="nav-link magnetic">Contact</Link>
           <div className="relative group/bulk">
