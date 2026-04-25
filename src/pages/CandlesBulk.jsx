@@ -197,13 +197,13 @@ export default function CandlesBulk() {
           </div>
         </div>
 
-        <div className="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8 w-full">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-5 sm:px-8 w-full pt-32 pb-32 lg:pt-40 lg:pb-40">
           <div className="max-w-3xl">
-            <h1 className="font-serif font-light leading-none reveal-up"
-              style={{ fontSize: 'clamp(4rem,10vw,8.5rem)', color: 'white' }}>
+            <h1 className="font-serif font-light leading-none reveal-up drop-shadow-2xl"
+              style={{ fontSize: 'clamp(5rem, 13vw, 11rem)', color: 'white' }}>
               <span className="block">Pure</span>
-              <span className="block italic gold-shimmer-text">Candles</span>
-              <span className="block text-[0.4em] tracking-[0.15em] mt-4 uppercase font-extralight not-italic opacity-30">Collection</span>
+              <span className="block italic gold-shimmer-text pb-2">Candles</span>
+              <span className="block text-[0.35em] tracking-[0.2em] mt-4 font-extralight not-italic opacity-40">Collection</span>
             </h1>
             <p className="font-light text-sm md:text-base leading-loose mt-12 max-w-xl text-white/50 reveal-up" style={{ animationDelay: '0.2s' }}>
               Engineered for absolute serenity. Our Candles collection integrates advanced ultrasonic
