@@ -32,7 +32,7 @@ export default function Navbar() {
                 </Link>
                 <Link to="/bulk/candles" className="flex items-center gap-3 px-4 py-3 hover:bg-gold-400/10 text-[10px] tracking-[0.2em] uppercase text-white/70 hover:text-gold-400 transition-all duration-300 group/item">
                   <div className="w-1 h-1 rounded-full bg-gold-400/30 group-hover/item:bg-gold-400 transition-colors"></div>
-                  <span>CANDALS (Candles)</span>
+                  <span>Candles</span>
                 </Link>
               </div>
             </div>

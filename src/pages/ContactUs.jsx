@@ -15,7 +15,7 @@ export default function ContactUs() {
       <div className="min-h-screen bg-[#1a1610] text-white">
 
         {/* ULTRA PRO MAX HERO SECTION */}
-        <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-screen min-h-[700px] flex flex-col justify-between items-center overflow-hidden pt-28 pb-24">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
@@ -29,19 +29,21 @@ export default function ContactUs() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#1a1610] via-[#1a1610]/30 to-transparent"></div>
           </div>
 
-          <div className="relative z-10 text-center px-5 max-w-4xl mx-auto reveal-up -translate-y-20 sm:-translate-y-16">
-            <div className="flex justify-center items-center gap-6 mb-10">
+          <div className="relative z-10 text-center px-5 max-w-4xl mx-auto reveal-up">
+            <div className="flex justify-center items-center gap-6 mb-8">
               <div className="h-px w-16 bg-gold-400"></div>
               <p className="text-[10px] tracking-[0.6em] uppercase text-gold-400 font-bold">Client Relations</p>
               <div className="h-px w-16 bg-gold-400"></div>
             </div>
 
-            <h1 className="font-serif font-light leading-[1.1] text-5xl sm:text-7xl lg:text-8xl mb-[20rem]">
+            <h1 className="font-serif font-light leading-[1.1] text-5xl sm:text-7xl lg:text-8xl">
               Connect With <br />
               <span className="italic gold-shimmer-text">Excellence</span>
             </h1>
+          </div>
 
-            <p className="text-white/60 text-sm sm:text-lg tracking-widest max-w-2xl mx-auto font-semibold leading-relaxed">
+          <div className="relative z-10 text-center px-5 max-w-4xl mx-auto reveal-up" style={{ animationDelay: '0.4s' }}>
+            <p className="text-white/80 text-sm sm:text-lg tracking-widest max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md">
               Bespoke consultations, bulk inquiries, and luxury partnerships. Let us elevate your atmosphere to the pinnacle of olfactory art.
             </p>
           </div>
@@ -69,7 +71,7 @@ export default function ContactUs() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 reveal-up" style={{ animationDelay: '0.2s' }}>
               {[
-                { title: 'Paris, France', line1: 'WeWork Paris Hub', line2: '33 Rue La Fayette', line3: '75009 Paris' },
+                { title: 'Paris, France', line1: 'WeWork Paris Hub', line2: '33 Rue La Fayette', line3: '75056 Paris' },
                 { title: 'Dubai, UAE', line1: 'Business Bay', line2: 'Downtown District', line3: 'Dubai' },
                 { title: 'New Delhi, India', line1: 'Eros Corporate Tower', line2: 'Nehru Place', line3: '110019' }
               ].map((loc, i) => (

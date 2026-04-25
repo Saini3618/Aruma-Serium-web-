@@ -15,7 +15,7 @@ export default function MobileMenu() {
       <div className="flex flex-col items-center gap-4 py-4">
         <span className="text-[10px] tracking-[0.4em] text-gold-400/50 uppercase pb-2">Bulk Orders</span>
         <Link to="/bulk/oils" className="mobile-link font-serif text-2xl tracking-widest transition-colors text-gold-400">Aroma Oils</Link>
-        <Link to="/bulk/candles" className="mobile-link font-serif text-2xl tracking-widest transition-colors text-gold-400">Candals Candles</Link>
+        <Link to="/bulk/candles" className="mobile-link font-serif text-2xl tracking-widest transition-colors text-gold-400">Candles</Link>
       </div>
     </div>
   );

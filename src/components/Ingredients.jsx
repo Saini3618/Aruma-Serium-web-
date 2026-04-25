@@ -1,7 +1,7 @@
 export default function Ingredients() {
   const ingredients = [
     { icon: '🌹', name: 'Bulgarian Rose Otto', desc: "Sunrise-harvested Damask Roses from Bulgaria's Rose Valley. Luxurious floral warmth with a hint of honey." },
-    { icon: '🌳', name: 'Arabian Oud (Agarwood)', desc: 'Rare agarwood resin prized for millennia. Deep, smoky-sweet and hypnotically masculine.' },
+    { icon: '🌳', name: 'Arabian Oudh (Agarwood)', desc: 'Rare agarwood resin prized for millennia. Deep, smoky-sweet and hypnotically masculine.' },
     { icon: '🌊', name: 'Marine Accords', desc: 'A proprietary blend recreating the crisp, ozone-fresh scent of the open sea after a storm.' },
     { icon: '🍑', name: 'Tropical Fruit Absolutes', desc: 'Cold-pressed extracts from mango, passion fruit, and lychee — vibrant, juicy and irresistible.' },
     { icon: '💧', name: 'Arctic Spring Water Essence', desc: 'Mineral-pure water essence from Nordic glacial springs for crisp, weightless aqua freshness.' },

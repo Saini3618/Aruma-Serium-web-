@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 
 export default function Collection() {
-  const displayProducts = products.filter(p => p.id !== 'black-oudh-aroma');
-  const blackOudh = products.find(p => p.id === 'black-oudh-aroma');
+  const displayProducts = products.filter(p => p.id !== 'royal-oud-aroma');
+  const royalOud = products.find(p => p.id === 'royal-oud-aroma');
 
   return (
     <section id="collection" className="py-14 sm:py-20 px-5 sm:px-8 relative overflow-hidden" style={{ background: 'var(--bg-1)' }}>
@@ -52,12 +52,12 @@ export default function Collection() {
           ))}
         </div>
 
-        {/* Black Oudh feature */}
-        {blackOudh && (
+        {/* Royal Oud feature */}
+        {royalOud && (
           <div className="mt-10 reveal-up" style={{ animationDelay: '0.35s' }}>
             <div className="oudh-feature-card group">
               <div className="oudh-img-side">
-                <img src={blackOudh.img} alt={blackOudh.alt} className="oudh-img" loading="lazy" decoding="async" />
+                <img src={royalOud.img} alt={royalOud.alt} className="oudh-img" loading="lazy" decoding="async" />
                 <div className="oudh-img-fade"></div>
               </div>
               <div className="oudh-content">
@@ -66,20 +66,20 @@ export default function Collection() {
                   <span className="text-[9px] tracking-[0.5em] uppercase text-gold-400">Limited Edition · Oriental</span>
                 </div>
                 <h3 className="font-serif text-white mb-3 split-text" style={{ fontSize: 'clamp(2rem,4vw,3rem)', fontWeight: 300 }}>
-                  {blackOudh.name.split(' ')[0]} <em className="text-gold-400">{blackOudh.name.split(' ').slice(1).join(' ')}</em>
+                  {royalOud.name.split(' ')[0]} <em className="text-gold-400">{royalOud.name.split(' ').slice(1).join(' ')}</em>
                 </h3>
-                <p className="text-sm font-light italic mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.38)' }}>{blackOudh.tagline}</p>
+                <p className="text-sm font-light italic mb-6 max-w-md" style={{ color: 'rgba(255,255,255,0.38)' }}>{royalOud.tagline}</p>
                 <p className="text-sm font-light leading-relaxed max-w-lg mb-8" style={{ color: 'rgba(210,205,195,0.60)' }}>
-                  {blackOudh.description}
+                  {royalOud.description}
                 </p>
                 <div className="flex items-center gap-6 flex-wrap">
-                  <Link to={`/product/${blackOudh.slug}`} className="btn-gold-sm group flex items-center gap-2 magnetic">
+                  <Link to={`/product/${royalOud.slug}`} className="btn-gold-sm group flex items-center gap-2 magnetic">
                     <span>Explore Aroma</span>
                     <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                     </svg>
                   </Link>
-                  <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>{blackOudh.cat}</span>
+                  <span className="text-xs tracking-widest uppercase" style={{ color: 'rgba(255,255,255,0.28)' }}>{royalOud.cat}</span>
                 </div>
               </div>
               <div className="oudh-glow-badge">

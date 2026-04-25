@@ -8,80 +8,80 @@ const products = [
     img: 'images/8.webp',
     alt: 'Coconut & Driftwood',
     cat: 'Floral Series',
-    name: 'CANDALS COCONUT & DRIFTWOOD',
+    name: 'Candles Coconut & Driftwood',
     tagline: 'Warm coconut milk, sea salt & driftwood.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20COCONUT%20&%20DRIFTWOOD',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20COCONUT%20&%20DRIFTWOOD',
     delay: '0.1s',
   },
   {
     img: 'images/1.webp',
     alt: 'Banana Chocolate Crepes',
     cat: 'Gourmand Series',
-    name: 'CANDALS Banana Chocolate Crepes',
+    name: 'Candles Banana Chocolate Crepes',
     tagline: 'Banana, vanilla, cinnamon & maple syrup.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Banana%20Chocolate%20Crepes',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Banana%20Chocolate%20Crepes',
     delay: '0.15s',
   },
   {
     img: 'images/3.webp',
     alt: 'French Manicure',
     cat: 'Signature Series',
-    name: 'CANDALS COOL BREEZE',
+    name: 'Candles Cool Breeze',
     tagline: 'Lavender, sweet pea & vanilla.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20French%20Manicure',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20French%20Manicure',
     delay: '0.2s',
   },
   {
     img: 'images/2.webp',
     alt: 'WHITE NEROLI & TUBEROSE',
     cat: 'Fresh Series',
-    name: 'CANDALS WHITE NEROLI & TUBEROSE',
+    name: 'Candles White Neroli & Tuberose',
     tagline: 'Teakwood & herbal lavender infused with mahogany & musk.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Cool%20Breeze',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Cool%20Breeze',
     delay: '0.25s',
   },
   {
     img: 'images/4.webp',
     alt: 'SUGAR CINNAMON',
     cat: 'Signature Series',
-    name: 'CANDALS SUGAR CINNAMON',
+    name: 'Candles Sugar Cinnamon',
     tagline: 'Fresh mint & sweet melon.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Minty%20Melon',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Minty%20Melon',
     delay: '0.3s',
   },
   {
     img: 'images/5.webp',
     alt: 'CHERRY BLOSSOM & JASMINE',
     cat: 'Floral Series',
-    name: 'CANDALS CHERRY BLOSSOM & JASMINE',
+    name: 'Candles Cherry Blossom & Jasmine',
     tagline: 'Spicy clove, cinnamon & cedar with sweet citrus & ginger.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20CHERRY%20BLOSSOM%20&%20JASMINE',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20CHERRY%20BLOSSOM%20&%20JASMINE',
     delay: '0.35s',
   },
   {
     img: 'images/6.webp',
     alt: 'SUN SOAKED CITRUS',
     cat: 'Citrus Series',
-    name: 'CANDALS SUN SOAKED CITRUS',
+    name: 'Candles Sun Soaked Citrus',
     tagline: 'Sparkling orange, mandarin & lemon with a hint of vanilla.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Sunny%20Breeze',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Sunny%20Breeze',
     delay: '0.4s',
   },
   {
     img: 'images/7.webp',
     alt: 'ROYAL ROSE',
     cat: 'Botanical Series',
-    name: 'CANDALS ROYAL ROSE',
+    name: 'Candles Royal Rose',
     tagline: 'Velvety rose petals, amber & sandalwood.',
     variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20CANDALS%20Pure%20Passion',
+    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Pure%20Passion',
     delay: '0.45s',
   },
 ];
@@ -156,7 +156,7 @@ export default function CandlesBulk() {
       {/* Hero Section */}
       <section id="candle-hero" className="relative w-full min-h-[95vh] flex items-center overflow-hidden bg-[#1a1610]">
         <div className="absolute inset-0 z-0 opacity-50">
-          <SafeImage src="images/candal hero back.webp" alt="Candals Lux" className="w-full h-full object-cover object-center parallax-img" loading="eager" />
+          <SafeImage src="images/candal hero back.webp" alt="Candles Lux" className="w-full h-full object-cover object-center parallax-img" loading="eager" />
           <div className="absolute inset-0"
             style={{ background: 'linear-gradient(105deg,rgba(26,22,16,1) 0%,rgba(26,22,16,0.6) 45%,rgba(26,22,16,0.3) 100%)' }}>
           </div>
@@ -189,7 +189,7 @@ export default function CandlesBulk() {
                 style={{ background: 'linear-gradient(135deg,rgba(212,168,66,0.7),rgba(30,25,15,0.3),rgba(212,168,66,0.5))' }}>
                 <div className="w-full h-full rounded-full overflow-hidden"
                   style={{ background: 'linear-gradient(160deg,#2e2820 0%,#1a1610 100%)' }}>
-                  <img src="/images/3.webp" alt="Candals Floating Tech"
+                  <img src="/images/3.webp" alt="Candles Floating Tech"
                     className="w-full h-full object-cover scale-110" loading="lazy" />
                 </div>
               </div>
@@ -202,11 +202,11 @@ export default function CandlesBulk() {
             <h1 className="font-serif font-light leading-none reveal-up"
               style={{ fontSize: 'clamp(4rem,10vw,8.5rem)', color: 'white' }}>
               <span className="block">Pure</span>
-              <span className="block italic gold-shimmer-text">CANDALS</span>
+              <span className="block italic gold-shimmer-text">Candles</span>
               <span className="block text-[0.4em] tracking-[0.15em] mt-4 uppercase font-extralight not-italic opacity-30">Collection</span>
             </h1>
             <p className="font-light text-sm md:text-base leading-loose mt-12 max-w-xl text-white/50 reveal-up" style={{ animationDelay: '0.2s' }}>
-              Engineered for absolute serenity. Our CANDALS collection integrates advanced ultrasonic
+              Engineered for absolute serenity. Our Candles collection integrates advanced ultrasonic
               technology with high-couture design for the ultimate sanctuary in any environment.
             </p>
             <div className="flex flex-wrap items-center gap-10 mt-14 reveal-up" style={{ animationDelay: '0.3s' }}>
@@ -267,7 +267,7 @@ export default function CandlesBulk() {
         <div className="abs-orb" style={{ bottom: '-10%', left: '-5%', width: '500px', height: '500px', background: 'rgba(212,168,66,0.04)' }}></div>
         <div className="max-w-screen-xl mx-auto relative z-10">
           <div className="mb-32 text-center reveal-up">
-            <h2 className="font-serif text-5xl md:text-6xl font-light text-[#1a1610] tracking-widest uppercase">The <span className="italic text-gold-400">Portfolio</span></h2>
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-[#1a1610] tracking-widest uppercase">Candles <span className="italic text-gold-400">Portfolio</span></h2>
             <div className="h-px w-24 bg-gold-400/40 mx-auto mt-12"></div>
           </div>
 
@@ -376,7 +376,7 @@ export default function CandlesBulk() {
 
               <p className="text-[#1a1610]/50 text-[10px] tracking-[0.08em] sm:tracking-[0.25em] uppercase mb-8 sm:mb-14 font-light">Bulk Gifting · Retail Supply · Hospitality Contracts</p>
 
-              <a href={createWhatsAppLink('Hello I am interested in bulk orders for CANDALS')}
+              <a href={createWhatsAppLink('Hello I am interested in bulk orders for Candles')}
                 target="_blank" rel="noopener noreferrer"
                 className="relative overflow-hidden rounded-full p-[2px] group/btn transition-transform hover:scale-105 duration-500 shadow-xl shadow-gold-900/10 hover:shadow-gold-900/20">
                 <span className="absolute inset-0 bg-gradient-to-r from-gold-400 via-gold-200 to-gold-400 rounded-full opacity-70 group-hover/btn:opacity-100 animate-pulse-glow"></span>
