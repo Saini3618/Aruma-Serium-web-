@@ -24,7 +24,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden lg:flex items-center gap-10">
           <Link to="/#about" onClick={(e) => handleScroll(e, 'about')} className="nav-link magnetic">Our Story</Link>
-          <Link to="/#products" onClick={(e) => handleScroll(e, 'products')} className="nav-link magnetic">Products</Link>
+          <Link to="/#collection" onClick={(e) => handleScroll(e, 'collection')} className="nav-link magnetic">Products</Link>
           <Link to="/ingredients" className="nav-link magnetic">Ingredients</Link>
           <Link to="/contact" className="nav-link magnetic">Contact</Link>
           <div className="relative group/bulk">

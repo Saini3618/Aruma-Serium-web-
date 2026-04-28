@@ -1,6 +1,19 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Footer() {
+  const { pathname } = useLocation();
+
+  const handleScroll = (e, id) => {
+    if (pathname === '/') {
+      e.preventDefault();
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        window.history.pushState(null, '', '/#' + id);
+      }
+    }
+  };
+
   return (
     <footer id="footer-address" className="relative pt-16 pb-6 px-8 overflow-hidden"
       style={{ background: 'rgba(250, 247, 242, 0.95)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', borderTop: '1px solid rgba(178, 168, 148, 0.25)' }}>
@@ -49,7 +62,7 @@ export default function Footer() {
               { label: '🌊 Ocean Breeze Aroma', to: '/product/ocean-breeze-aroma' },
               { label: '🍊 Fruity Exotica Aroma', to: '/product/fruity-exotica' },
               { label: '💧 Aqua Aroma', to: '/product/aqua-aroma' },
-              { label: '🖤 Black Oudh Aroma', to: '/product/black-oudh-aroma' },
+              { label: '🖤 Black Oudh Aroma', to: '/product/royal-oud-aroma' },
             ].map((item, i) => (
               <Link key={i} to={item.to}
                 className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2"
@@ -60,7 +73,7 @@ export default function Footer() {
           {/* Company Links */}
           <div className="md:col-span-2 space-y-5">
             <h4 className="text-[9.5px] tracking-[0.4em] uppercase font-semibold mb-6" style={{ color: 'var(--text)' }}>Company</h4>
-            <Link to="/#about" className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Our Story</Link>
+            <Link to="/#about" onClick={(e) => handleScroll(e, 'about')} className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Our Story</Link>
             <Link to="/ingredients" className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Ingredients</Link>
             <Link to="/contact" className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Contact Us</Link>
             <Link to="/privacy-policy" className="block text-[13px] font-light transition-all duration-300 hover:text-[#c8973a] hover:translate-x-2" style={{ color: 'var(--text-70)' }}>Privacy Policy</Link>
