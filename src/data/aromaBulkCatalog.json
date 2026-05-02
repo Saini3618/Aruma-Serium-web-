@@ -1,0 +1,717 @@
+[
+  {
+    "img": "images/A1%20-%20Copy.webp",
+    "alt": "Fruity Exotica — Amor Exotic bulk aroma oil",
+    "name": "Fruity Exotica",
+    "tagline": "Crystalline water notes and cool mint — Parisian aqua signature in a 1 litre premium pour for large-scale diffusion.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Fruity%20Exotica",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A2%20-%20Copy.webp",
+    "alt": "Ocean Breeze — Amor Exotic bulk aroma oil",
+    "name": "Ocean Breeze",
+    "tagline": "Deep marine breeze and salt-kissed air — bold ocean identity crafted for statement lobbies and retail displays.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ocean%20Breeze",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A3.webp",
+    "alt": "Floral Fresh Aroma — Amor Exotic bulk aroma oil",
+    "name": "Floral Fresh Aroma",
+    "tagline": "Let desire linger in the air — gardenia, jasmine, and soft white petals in our iconic floral fresh 1 litre oil.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Floral%20Fresh%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A4.webp",
+    "alt": "Green Tea Aroma — Amor Exotic bulk aroma oil",
+    "name": "Green Tea Aroma",
+    "tagline": "Refresh your senses with nature’s elegance — steamed green tea, soft herbs, and a peaceful spa-like finish.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Green%20Tea%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A5.webp",
+    "alt": "Lavender Aroma — Amor Exotic bulk aroma oil",
+    "name": "Lavender Aroma",
+    "tagline": "Unwind with the essence of lavender — pure fields, herbal calm, and a powdery dry-down for bedrooms and salons.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Lavender%20Aroma",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A6.webp",
+    "alt": "Lemongrass Aroma — Amor Exotic bulk aroma oil",
+    "name": "Lemongrass Aroma",
+    "tagline": "Invigorate your senses with nature’s zest — bright citrus herbs and clean green lift for kitchens and workspaces.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Lemongrass%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A7.webp",
+    "alt": "Mogra Aroma — Amor Exotic bulk aroma oil",
+    "name": "Mogra Aroma",
+    "tagline": "Celebrate the fragrance of jasmine — lush Indian mogra, creamy white florals, and romantic depth.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Mogra%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A8.webp",
+    "alt": "Rose Aroma — Amor Exotic bulk aroma oil",
+    "name": "Rose Aroma",
+    "tagline": "Let romance blossom — crimson rose absolutes and soft spice for a passionate floral signature.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Rose%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A9.webp",
+    "alt": "Nargis Aroma — Amor Exotic bulk aroma oil",
+    "name": "Nargis Aroma",
+    "tagline": "Cheerful narcissus and spring daffodil facets — bright botanical energy with an uplifting aura.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Nargis%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A10.webp",
+    "alt": "Tropical Lily Aroma — Amor Exotic bulk aroma oil",
+    "name": "Tropical Lily Aroma",
+    "tagline": "Intoxicating tropical lily and rare blooms — elite floral depth for luxury gifting and hospitality.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Tropical%20Lily%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A11.webp",
+    "alt": "Vista Aroma — Amor Exotic bulk aroma oil",
+    "name": "Vista Aroma",
+    "tagline": "Experience the tranquil essence of the sea — soft marine horizon, coastal florals, and serene escape.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Vista%20Aroma",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A12.webp",
+    "alt": "White Oudh Aroma — Amor Exotic bulk aroma oil",
+    "name": "White Oudh Aroma",
+    "tagline": "Refined pale oudh woods — luminous smoke, soft amber resin, and modern oriental polish.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20White%20Oudh%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A13.webp",
+    "alt": "AAA Fawak — Amor Exotic bulk aroma oil",
+    "name": "AAA Fawak",
+    "tagline": "Let desire linger in the air — cool water, blue florals, and sheer musk in a 1 litre Parisian blend.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20AAA%20Fawak",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A14.webp",
+    "alt": "Pink Fairy Gumdrop Aroma — Amor Exotic bulk aroma oil",
+    "name": "Pink Fairy Gumdrop Aroma",
+    "tagline": "Indulge in the sweet enchantment of candyland — playful sugar, berry gloss, and gourmand sparkle.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Pink%20Fairy%20Gumdrop%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A1555.webp",
+    "alt": "Pumpkin Spice Aroma — Amor Exotic bulk aroma oil",
+    "name": "Pumpkin Spice Aroma",
+    "tagline": "Let desire linger in the air — warm pumpkin, baking spice, and autumn comfort in a premium poured oil.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Pumpkin%20Spice%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A16.webp",
+    "alt": "Rose Oil — Amor Exotic bulk aroma oil",
+    "name": "Rose Oil",
+    "tagline": "Immerse in the luxurious essence of roses — velvet petals, soft honey, and fairy-tale romance.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Rose%20Oil",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A17.webp",
+    "alt": "Rose Saffron — Amor Exotic bulk aroma oil",
+    "name": "Rose Saffron",
+    "tagline": "Let desire linger in the air — damask rose threads with golden saffron and warm resinous depth.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Rose%20Saffron",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A18.webp",
+    "alt": "Baccarat AG — Amor Exotic bulk aroma oil",
+    "name": "Baccarat AG",
+    "tagline": "High-jewellery amber florals — radiant saffron, jasmine, and cedarwood for a red-carpet ambience.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Baccarat%20AG",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A19.webp",
+    "alt": "Orange Cinnamon Aroma — Amor Exotic bulk aroma oil",
+    "name": "Orange Cinnamon Aroma",
+    "tagline": "Let desire linger in the air — sparkling orange zest folded into warm cinnamon and holiday spice.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Orange%20Cinnamon%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/AA20.webp",
+    "alt": "Dark Amber & Charged Birch Aroma — Amor Exotic bulk aroma oil",
+    "name": "Dark Amber & Charged Birch Aroma",
+    "tagline": "Let desire linger in the air — smoky birch, molten amber, and midnight woods in a luxury oil.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Dark%20Amber%20%26%20Charged%20Birch%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A21.webp",
+    "alt": "Rose Oudh Aroma — Amor Exotic bulk aroma oil",
+    "name": "Rose Oudh Aroma",
+    "tagline": "Let desire linger in the air — velvety rose married to deep agarwood for a royal oriental accord.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Rose%20Oudh%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A22.webp",
+    "alt": "Spicy Mountain Aroma — Amor Exotic bulk aroma oil",
+    "name": "Spicy Mountain Aroma",
+    "tagline": "Let desire linger in the air — alpine wind, crisp pine, and a kick of peppered spice.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Spicy%20Mountain%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A23.webp",
+    "alt": "Talisman Oudh — Amor Exotic bulk aroma oil",
+    "name": "Talisman Oudh",
+    "tagline": "Mystical agarwood talisman — rare oudh, smoked incense, and gold resin for signature spaces.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Talisman%20Oudh",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/AA24.webp",
+    "alt": "Cedar & Balsam Aroma — Amor Exotic bulk aroma oil",
+    "name": "Cedar & Balsam Aroma",
+    "tagline": "Let desire linger in the air — frosted cedar, Canadian balsam, and evergreen cabin warmth.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Cedar%20%26%20Balsam%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A25.webp",
+    "alt": "Geranium & Lavender Aroma — Amor Exotic bulk aroma oil",
+    "name": "Geranium & Lavender",
+    "tagline": "Let desire linger in the air — leafy geranium, French lavender, and a clean botanical heart.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Geranium%20%26%20Lavender%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A266.webp",
+    "alt": "Apple Cinnamon Aroma — Amor Exotic bulk aroma oil",
+    "name": "Apple Cinnamon Aroma",
+    "tagline": "Let desire linger in the air — oven-warm apple, Ceylon cinnamon, and cozy gourmand glow.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Apple%20Cinnamon%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A27.webp",
+    "alt": "Cherry Blossom Aroma — Amor Exotic bulk aroma oil",
+    "name": "Cherry Blossom",
+    "tagline": "Let desire linger in the air — sakura petals, pale wood, and delicate spring rain.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Cherry%20Blossom%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A28.webp",
+    "alt": "Geranium & Bergamot Aroma — Amor Exotic bulk aroma oil",
+    "name": "Geranium & Bergamot",
+    "tagline": "Let desire linger in the air — rose geranium leaves with Italian bergamot sparkle.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Geranium%20%26%20Bergamot%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/AA2999.webp",
+    "alt": "Gracious Aroma — Amor Exotic bulk aroma oil",
+    "name": "Gracious Oudh",
+    "tagline": "Let desire linger in the air — gracious white florals, soft musk, and effortless Parisian poise.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Gracious%20Aroma",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A30.webp",
+    "alt": "Marine Aroma — Amor Exotic bulk aroma oil",
+    "name": "Marine Aroma",
+    "tagline": "Let desire linger in the air — deep marine accord, sea spray, and breezy coastal clarity.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Marine%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A31.webp",
+    "alt": "Mango Guava — Amor Exotic bulk aroma oil",
+    "name": "Mango Guava",
+    "tagline": "Let desire linger in the air — sunlit citrus grove, leafy greens, and sparkling peel.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Mango%20Guava",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A33.webp",
+    "alt": "Ylang Ylang Oil — Amor Exotic bulk aroma oil",
+    "name": "Ylang Ylang Oil",
+    "tagline": "Let desire linger in the air — airy blue florals, cool musk, and a clean couture diffusion profile.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ylang%20Ylang%20Oil",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A34.webp",
+    "alt": "Golden Breeze — Amor Exotic bulk aroma oil",
+    "name": "Golden Breeze",
+    "tagline": "Let desire linger in the air — sharp woods, metallic sage, and modern masculine-luxe edge.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Golden%20Breeze",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/AAAAAA.webp",
+    "alt": "Fresh Linen Aroma — Amor Exotic bulk aroma oil",
+    "name": "Fresh Linen Aroma",
+    "tagline": "Pure and calming aromatic ambience — sun-dried cotton, soft powder, and crisp clean sheets.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Fresh%20Linen%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A37.webp",
+    "alt": "Gingerbread Aroma — Amor Exotic bulk aroma oil",
+    "name": "Gingerbread Aroma",
+    "tagline": "Warm gingerbread spice — molasses, ginger snap, and holiday bakery comfort.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Gingerbread%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A38.webp",
+    "alt": "Chamomile Aroma — Amor Exotic bulk aroma oil",
+    "name": "Chamomile Aroma",
+    "tagline": "Pure and calming aromatic oil — Roman chamomile, hay, and honeyed herbal rest.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Chamomile%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A39.webp",
+    "alt": "Reserve Blend Aroma — Amor Exotic bulk aroma oil",
+    "name": "Reserve Blend Aroma",
+    "tagline": "House reserve Parisian blend — versatile 1 litre diffusion oil for bespoke hospitality programs.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Reserve%20Blend%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A40.png",
+    "alt": "WoodRize Aroma — Amor Exotic bulk aroma oil",
+    "name": "WoodRize Aroma",
+    "tagline": "Crackling wood-inspired warmth — embered logs, smoked vetiver, and forest at dusk.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20WoodRize%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/silver_b.webp",
+    "alt": "Silver Birch Aroma — Amor Exotic bulk aroma oil",
+    "name": "Silver Birch Aroma",
+    "tagline": "Silver birch bark and cool sap — Nordic forest minimalism with a silver-green breeze.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Silver%20Birch%20Aroma",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A43.png",
+    "alt": "Musk Aroma — Amor Exotic bulk aroma oil",
+    "name": "Musk Aroma",
+    "tagline": "Clean skin musk and soft powder — intimate sillage that elevates bedrooms and boutiques.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Musk%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A44.png",
+    "alt": "Coffee Aroma — Amor Exotic bulk aroma oil",
+    "name": "Coffee Aroma",
+    "tagline": "Freshly roasted arabica and caramelized sugar — bold café energy for lounges and studios.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Coffee%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A45.webp",
+    "alt": "Saffron Kiwi Aroma — Amor Exotic bulk aroma oil",
+    "name": "Saffron Kiwi Aroma",
+    "tagline": "Let desire linger in the air — golden saffron threads with juicy kiwi and tropical lift.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Saffron%20Kiwi%20Aroma",
+    "delay": "0.15000000000000002s"
+  },
+  {
+    "img": "images/A46.webp",
+    "alt": "Peach Aroma — Amor Exotic bulk aroma oil",
+    "name": "Peach Aroma",
+    "tagline": "Let desire linger in the air — coastal sea salt, Mexican lime, and breezy driftwood.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Peach%20Aroma",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A47.png",
+    "alt": "Honey Aroma — Amor Exotic bulk aroma oil",
+    "name": "Honey Aroma",
+    "tagline": "Let desire linger in the air — wildflower honey, beeswax, and golden amber comfort.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Honey%20Aroma",
+    "delay": "0.25s"
+  },
+  {
+    "img": "images/A48.webp",
+    "alt": "Strawberry Aroma — Amor Exotic bulk aroma oil",
+    "name": "Strawberry Aroma",
+    "tagline": "Let desire linger in the air — ripe field strawberries, green leaf, and jammy sweetness.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Strawberry%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A49.webp",
+    "alt": "Vanilla Aroma — Amor Exotic bulk aroma oil",
+    "name": "Vanilla Aroma",
+    "tagline": "Let desire linger in the air — bourbon vanilla, soft tonka, and silky gourmand warmth.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Vanilla%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/A50.webp",
+    "alt": "Green Apple Aroma — Amor Exotic bulk aroma oil",
+    "name": "Green Apple Aroma",
+    "tagline": "Let desire linger in the air — crisp Granny Smith, dewy peel, and sparkling orchard air.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Green%20Apple%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/A52.webp",
+    "alt": "Pineapple — Amor Exotic bulk aroma oil",
+    "name": "Pineapple",
+    "tagline": "Let desire linger in the air — Sweet pineapple, hint of coconut, and tropical zest",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Pineapple",
+    "delay": "0.2s"
+  },
+  {
+    "img": "images/A54.webp",
+    "alt": "Aqua Aroma — Amor Exotic bulk aroma oil",
+    "name": "Aqua Aroma",
+    "tagline": "Cool water signature — crystalline aqua accord scaled for bulk diffusers and retail refill.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma",
+    "delay": "0.3s"
+  },
+  {
+    "img": "images/A55.webp",
+    "alt": "Black Oudh Aroma — Amor Exotic bulk aroma oil",
+    "name": "Black Oudh Aroma",
+    "tagline": "Light me, love me, lose yourself — deep agarwood smoke, amber, and commanding oriental power.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/Floral%20fresh%20Aroma1.png",
+    "alt": "Floral Fresh Aroma — Amor Exotic Aroma of Paris",
+    "name": "Floral Fresh Aroma",
+    "tagline": "Aroma brings delight to soul and vitality — garden-fresh blooms and white florals in our signature 15ML bottle.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Floral%20Fresh%20Aroma",
+    "delay": "0s"
+  },
+  {
+    "img": "images/updated.webp",
+    "alt": "Lavender Aroma — Amor Exotic Aroma of Paris",
+    "name": "Lavender Aroma",
+    "tagline": "Pure & natural oil — calming lavender fields and soft herbal depth for serene spaces.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Lavender%20Aroma",
+    "delay": "0.05s"
+  },
+  {
+    "img": "images/ocean_breeze.webp",
+    "alt": "Ocean Breeze Aroma — Amor Exotic Aroma of Paris",
+    "name": "Ocean Breeze Aroma",
+    "tagline": "Premium essential oil — sea salt, coastal breeze, and bright citrus for a crisp marine ambience.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Ocean%20Breeze%20Aroma",
+    "delay": "0.1s"
+  },
+  {
+    "img": "images/fruity_exotica.webp",
+    "alt": "Fruit Exotica Aroma — Amor Exotic Aroma of Paris",
+    "name": "Fruit Exotica Aroma",
+    "tagline": "Premium essential oil — tropical fruits and sun-ripe sweetness for an uplifting, exotic atmosphere.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Fruit%20Exotica%20Aroma",
+    "delay": "0.15s"
+  },
+  {
+    "img": "images/aqua_aroma.webp",
+    "alt": "Aqua Aroma — Amor Exotic Aroma of Paris",
+    "name": "Aqua Aroma",
+    "tagline": "Aroma of Paris — cool water, white musk, and lotus for a clean, airy 15ML signature.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma",
+    "delay": "0.2s"
+  }
+]
