@@ -84,7 +84,7 @@ export default function TermsConditions() {
                 <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">04.</span> Returns & Hygiene Policy
               </h2>
               <p className="text-base text-[#2a2118]/80 leading-relaxed font-normal">
-                Due to strict luxury hygiene standards and the delicate nature of fine fragrances, <strong>we do not accept returns or exchanges on opened or used products.</strong> If an Amour Oil bottle, luxury candle, or bespoke serum is returned sealed, untouched, and in its original premium packaging within 14 days, a store credit or exchange may be granted strictly at our discretion. Shipping fees are non-refundable.
+                Due to strict luxury hygiene standards and the delicate nature of fine fragrances, <strong>we do not accept returns or exchanges on opened or used products.</strong> If an Amour Oil bottle, luxury candle, or bespoke serum is returned sealed, untouched, and in its original premium packaging within 3 days, a store credit or exchange may be granted strictly at our discretion. Shipping fees are non-refundable.
               </p>
             </section>
 
