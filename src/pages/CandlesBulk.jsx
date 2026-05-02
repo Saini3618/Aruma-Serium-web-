@@ -2,99 +2,10 @@ import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import SafeImage from '../components/SafeImage';
 import { createWhatsAppLink } from '../data/contactConfig';
-
-const products = [
-  {
-    img: 'images/8.webp',
-    alt: 'Coconut & Driftwood',
-    cat: 'Floral Series',
-    name: 'Candles Coconut & Driftwood',
-    tagline: 'Warm coconut milk, sea salt & driftwood.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20COCONUT%20&%20DRIFTWOOD',
-    delay: '0.1s',
-  },
-  {
-    img: 'images/1.webp',
-    alt: 'Banana Chocolate Crepes',
-    cat: 'Gourmand Series',
-    name: 'Candles Banana Chocolate Crepes',
-    tagline: 'Banana, vanilla, cinnamon & maple syrup.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Banana%20Chocolate%20Crepes',
-    delay: '0.15s',
-  },
-  {
-    img: 'images/3.webp',
-    alt: 'French Manicure',
-    cat: 'Signature Series',
-    name: 'Candles Cool Breeze',
-    tagline: 'Lavender, sweet pea & vanilla.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20French%20Manicure',
-    delay: '0.2s',
-  },
-  {
-    img: 'images/2.webp',
-    alt: 'WHITE NEROLI & TUBEROSE',
-    cat: 'Fresh Series',
-    name: 'Candles White Neroli & Tuberose',
-    tagline: 'Teakwood & herbal lavender infused with mahogany & musk.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Cool%20Breeze',
-    delay: '0.25s',
-  },
-  {
-    img: 'images/4.webp',
-    alt: 'SUGAR CINNAMON',
-    cat: 'Signature Series',
-    name: 'Candles Sugar Cinnamon',
-    tagline: 'Fresh mint & sweet melon.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Minty%20Melon',
-    delay: '0.3s',
-  },
-  {
-    img: 'images/5.webp',
-    alt: 'CHERRY BLOSSOM & JASMINE',
-    cat: 'Floral Series',
-    name: 'Candles Cherry Blossom & Jasmine',
-    tagline: 'Spicy clove, cinnamon & cedar with sweet citrus & ginger.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20CHERRY%20BLOSSOM%20&%20JASMINE',
-    delay: '0.35s',
-  },
-  {
-    img: 'images/6.webp',
-    alt: 'SUN SOAKED CITRUS',
-    cat: 'Citrus Series',
-    name: 'Candles Sun Soaked Citrus',
-    tagline: 'Sparkling orange, mandarin & lemon with a hint of vanilla.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Sunny%20Breeze',
-    delay: '0.4s',
-  },
-  {
-    img: 'images/7.webp',
-    alt: 'ROYAL ROSE',
-    cat: 'Botanical Series',
-    name: 'Candles Royal Rose',
-    tagline: 'Velvety rose petals, amber & sandalwood.',
-    variants: ['400ML Glass Edition', '600ML Ceramic Tank', 'CUSTOMIZATION AND BULK ORDER'],
-    waText: 'Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Candles%20Pure%20Passion',
-    delay: '0.45s',
-  },
-];
-
-const giftingClients = [
-  { name: 'Atlantis Dubai', src: '/images/atlantis_dubai_mall.png' },
-  { name: 'Dubai Mall', src: '/images/dubai_mall.png' },
-  { name: 'Mall Of The Emirates', src: '/images/mall_of_emirates.png', logoBg: 'dark' },
-  { name: 'Suria Mall', src: '/images/suria_mall.png', logoBg: 'dark' },
-  { name: 'Pavilion Hotel', src: '/images/pavilion_hotal.png' },
-];
+import { candleBulkCatalog } from '../data/candleBulkCatalog';
 
 export default function CandlesBulk() {
+  const { products, giftingClients } = candleBulkCatalog;
   const giftingClientsLoop = [...giftingClients, ...giftingClients];
 
   useEffect(() => {

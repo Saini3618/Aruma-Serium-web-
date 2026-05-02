@@ -7,6 +7,9 @@ const brands = [
   { name: 'Lylo Hotel', src: '/images/lylo_hotel.png' },
   { name: 'New Zealand Air', src: '/images/newziland_air.png' },
   { name: 'Batik Air', src: '/images/batik_air.png', accentBadge: 'pink' },
+  { name: 'Foursquare', src: '/images/foursquare.png' },
+  { name: 'Kmart', src: '/images/kmart.png' },
+  { name: 'PakNSave', src: '/images/paknsave.png' },
 ];
 
 export default function Clients() {
