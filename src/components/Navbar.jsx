@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const { pathname } = useLocation();
-  const isProductPage = pathname.startsWith('/product/');
+
 
   const handleScroll = (e, id) => {
     if (pathname === '/') {
@@ -16,15 +16,15 @@ export default function Navbar() {
   };
 
   return (
-    <nav id="navbar" className={`fixed top-0 left-0 right-0 z-50 ${isProductPage ? 'product-page-nav' : ''}`}>
+    <nav id="navbar" className="fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between gap-3">
-        <Link to="/" className="flex flex-col leading-none min-w-0">
+        <Link to="/" className="flex flex-col gap-1 sm:gap-1.5 leading-none min-w-0">
           <span className="nav-logo-main font-serif text-[18px] sm:text-2xl font-light tracking-[0.25em] sm:tracking-[0.5em] text-gold-400 uppercase truncate">Amor Exotic</span>
-          <span className="nav-logo-sub text-[8px] sm:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-white/90 uppercase mt-0.5 flex justify-center">Aroma Of Paris</span>
+          <span className="nav-logo-sub text-[8px] sm:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] uppercase flex justify-center" style={{ color: 'rgba(255,255,255,0.85)' }}>Aroma Of Paris</span>
         </Link>
         <div className="hidden lg:flex items-center gap-10">
           <Link to="/#about" onClick={(e) => handleScroll(e, 'about')} className="nav-link magnetic">Our Story</Link>
-          <Link to="/#products" onClick={(e) => handleScroll(e, 'products')} className="nav-link magnetic">Products</Link>
+          <Link to="/#collection" onClick={(e) => handleScroll(e, 'collection')} className="nav-link magnetic">Products</Link>
           <Link to="/ingredients" className="nav-link magnetic">Ingredients</Link>
           <Link to="/contact" className="nav-link magnetic">Contact</Link>
           <div className="relative group/bulk">

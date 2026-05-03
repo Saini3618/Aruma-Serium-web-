@@ -87,16 +87,16 @@ export default function Disclaimer() {
                 <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">04.</span> Skin Sensitivity & Allergy Awareness
               </h2>
               <p className="text-base text-[#2a2118]/80 leading-relaxed font-normal">
-                Amor Exotic oils are professionally blended to the highest concentration standards. All our formulations undergo internal quality checks before dispatch. <strong>We are proud to state that the vast majority of our customers experience no irritation whatsoever.</strong> However, as a responsible luxury brand, we recommend that customers with known skin sensitivities or fragrance allergies perform a small patch test on the inner wrist before full use — this is universally recommended by all dermatologists and premium fragrance brands worldwide. In the unlikely event of any discomfort, simply discontinue use. Your wellbeing is our foremost priority.
+                Amor Exotic oils are professionally blended to the highest concentration standards. All our formulations undergo internal quality checks before dispatch. <strong>We are proud to state that the vast majority of our customers experience no irritation whatsoever.</strong> However, as a responsible luxury brand, we recommend that customers with known skin sensitivities or fragrance allergies perform a small patch test on the inner wrist before full use — this is universally recommended by all dermatologists and premium fragrance manufacturers worldwide. In the unlikely event of any discomfort, simply discontinue use. Your wellbeing is our foremost priority.
               </p>
             </section>
 
             <section className="reveal-up relative z-10">
               <h2 className="font-serif text-3xl sm:text-4xl mb-6 text-[#2a2118] flex items-center gap-4 border-b border-[#ede8df] pb-6">
-                <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">05.</span> Bulk Supply & Business Partnerships
+                <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">05.</span> Pricing & Global Sourcing Variation
               </h2>
               <p className="text-base text-[#2a2118]/80 leading-relaxed font-normal">
-                Amor Exotic is an established fragrance manufacturer and bulk supplier, proudly serving hospitality brands, luxury retail stores, corporate gifting houses, and wellness businesses across India and internationally. <strong>All bulk orders are confirmed with a formal order acknowledgement, and our dedicated business team maintains consistent communication with every partner throughout their order lifecycle.</strong> Please note that certain rare botanical raw materials — such as Damascena rose, wild-harvested Oud, and specific French floral absolutes — are subject to seasonal availability. In such cases, we proactively communicate with our B2B partners and offer equivalent premium alternatives. Our client relationships are built on transparency, reliability, and a long-term commitment to excellence.
+                Amor Exotic sources the world's finest raw materials from premium suppliers across multiple continents to craft our exceptional fragrances. <strong>Product pricing may vary depending on global supply chain availability, raw material costs, and sourcing demands.</strong> As we curate botanical ingredients from diverse international markets — including rare Oud, premium florals, and exotic botanical extracts — pricing fluctuations are a natural reflection of world commodity markets and seasonal availability. Bulk and retail rates are determined based on current global supply conditions and the specific sourcing requirements for each formulation. <strong>All bulk orders are confirmed with a formal order acknowledgement, and our dedicated business team maintains consistent communication with every partner throughout their order lifecycle.</strong> We pride ourselves on complete transparency regarding pricing, material sourcing, and product specifications. Our partnerships are built on reliability and a long-term commitment to delivering authentic luxury.
               </p>
             </section>
 
@@ -108,36 +108,16 @@ export default function Disclaimer() {
                 To ensure you experience the full depth and complexity of your Amor Exotic fragrance, <strong>we recommend storing all products in a cool, dry environment away from direct sunlight.</strong> The aromatic compounds in premium botanical oils are sensitive to UV light and excessive heat — not because of any compromise in quality, but because this is the nature of all high-grade natural fragrance ingredients. A private drawer, cabinet, or dedicated fragrance shelf at room temperature is ideal. Properly stored, our oils and candles retain their full aromatic profile for an extended period. This storage advice is consistent with international standards followed by top fragrance maisons globally.
               </p>
             </section>
-            {/* Section 07 — Aroma Oil Products */}
+            {/* Section 07 — Packaging & Product Variations */}
             <section className="relative z-10">
               <h2 className="font-serif text-3xl sm:text-4xl mb-6 text-[#2a2118] flex items-center gap-4 border-b border-[#ede8df] pb-6">
-                <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">07.</span> Aroma Oil Collection — Product Reference
+                <span className="text-[#c8973a] text-lg font-sans tracking-widest font-bold">07.</span> Packaging Customization & Product Variations
               </h2>
               <div className="border border-[#ede8df] rounded-xl overflow-hidden">
-                <div className="px-6 py-4 border-b border-[#ede8df] bg-[#faf8f4]">
-                  <p className="text-sm text-[#2a2118]/60 italic">"Product image for illustration purposes only. Actual product may vary."</p>
+                <div className="px-6 py-4 bg-[#faf8f4]">
+                  <p className="text-sm text-[#2a2118]/60 italic mb-3">"Product image for illustration purposes only. Actual product may vary."</p>
+                  <p className="text-sm text-[#2a2118]/60 italic">"As we customize our packaging for our clients as per their specific requirements, images shown on the website and actual delivered products may vary in packaging design, labeling, and presentation."</p>
                 </div>
-                {[
-                  'Fruity Exotica',
-                  'Ocean Breeze',
-                  'Floral Fresh',
-                  'Lemongrass',
-                  'Lavender',
-                  'Green Tea',
-                  'Mogra',
-                  'Rose',
-                  'Nargis',
-                  'Tropical Lily',
-                  'Vista',
-                  'White Oudh',
-                  'Aqua Aroma',
-                  'Pink Fairy Gumdrop',
-                  'Pumpkin Spice',
-                ].map((name, i) => (
-                  <div key={i} className="px-6 py-3 border-b border-[#ede8df] last:border-0 hover:bg-[#faf6ef] transition-colors duration-150">
-                    <span className="text-sm text-[#2a2118]/80 font-light tracking-wide">{name}</span>
-                  </div>
-                ))}
               </div>
             </section>
 

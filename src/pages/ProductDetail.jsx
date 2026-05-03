@@ -4,6 +4,7 @@ import { products } from '../data/products';
 import { createWhatsAppLink } from '../data/contactConfig';
 import Layout from '../components/Layout';
 import SafeImage from '../components/SafeImage';
+import NotFound from './NotFound';
 
 export default function ProductDetail() {
   const { slug } = useParams();
@@ -45,16 +46,7 @@ export default function ProductDetail() {
   }, [slug, product]);
 
   if (!product) {
-    return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center bg-[#1a1610] text-white">
-          <div className="text-center">
-            <h1 className="font-serif text-5xl mb-8">Product Not Found</h1>
-            <Link to="/" className="btn-gold">Back to Collection</Link>
-          </div>
-        </div>
-      </Layout>
-    );
+    return <NotFound />; // 👈 THIS is required
   }
 
   return (

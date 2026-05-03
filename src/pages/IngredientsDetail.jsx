@@ -131,12 +131,13 @@ export default function IngredientsDetail() {
         {/* Video Background Container */}
         <div id="ing-video-wrap" className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
            {/* Dark Gradient Overlay for optimal text readability */}
-           <div className="absolute inset-0 bg-[#1a1610]/70 z-10"></div>
-           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-[#1a1610] z-10"></div>
+           <div className="absolute inset-0 bg-[#1a1610]/55 z-10"></div>
+           <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-[#1a1610]/80 z-10"></div>
            
            <video 
               autoPlay loop muted playsInline
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-60"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-80"
+              style={{ filter: 'brightness(1.06) contrast(1.05)' }}
             >
               <source src="/images/Fragrance_Oil_Manufacturing_Commercial.mp4" type="video/mp4" />
            </video>
@@ -152,7 +153,7 @@ export default function IngredientsDetail() {
             
             <h1 className="font-serif text-7xl md:text-9xl lg:text-[11rem] leading-[0.85] text-white font-light tracking-tighter mb-10">
               <span className="block mb-4">PURE</span>
-              <span className="block italic text-gold-600">ELEMENTS</span>
+              <span className="block italic text-gold-400 drop-shadow-[0_0_18px_rgba(212,168,66,0.45)]">ELEMENTS</span>
             </h1>
             
             <p className="max-w-2xl mx-auto text-white/60 text-sm md:text-base leading-loose tracking-widest uppercase mt-8">
