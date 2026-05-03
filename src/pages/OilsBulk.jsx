@@ -62,7 +62,7 @@ export default function OilsBulk() {
   return (
     <Layout>
       {/* Hero */}
-      <section id="oil-hero" className="relative w-full min-h-[95vh] flex items-center overflow-hidden bg-[#1a1610]">
+      <section id="oil-hero" className="relative w-full min-h-[95vh] flex items-center overflow-hidden bg-[#1a1610] pt-36 sm:pt-36 lg:pt-42">
         <div className="absolute inset-0 z-0 opacity-40">
           <SafeImage src="images/9328f814-3f9d-4343-ad37-db6b212677ae.webp" alt="Amor Aroma Bulk Hero" className="w-full h-full object-cover object-center parallax-img" loading="eager" />
           <div className="absolute inset-0"
@@ -113,7 +113,7 @@ export default function OilsBulk() {
             </div>
             <h1 className="font-serif font-light leading-none reveal-up" style={{ fontSize: 'clamp(4rem,10vw,8.5rem)' }}>
               <span className="text-white block">Aroma</span>
-              <span className="gold-shimmer-text block italic">Signature</span>
+              <span className="gold-shimmer-text block italic p-4">Signature</span>
             </h1>
             <p className="mt-12 text-sm md:text-base leading-loose max-w-xl text-white/60 reveal-up" style={{ animationDelay: '0.3s' }}>
               Rare botanicals. Timeless artistry. Our premium fragrance oils are crafted for the world's most

@@ -261,8 +261,8 @@
   },
   {
     "img": "images/A21.webp",
-    "alt": "Rose Oudh Aroma — Amor Exotic bulk aroma oil",
-    "name": "Rose Oudh Aroma",
+    "alt": "Rose Amber Oudh Aroma — Amor Exotic bulk aroma oil",
+    "name": "Rose Amber Oudh Aroma",
     "tagline": "Let desire linger in the air — velvety rose married to deep agarwood for a royal oriental accord.",
     "variants": [
       "15ML Luxury Pack",
@@ -274,8 +274,8 @@
   },
   {
     "img": "images/A22.webp",
-    "alt": "Spicy Mountain Aroma — Amor Exotic bulk aroma oil",
-    "name": "Spicy Mountain Aroma",
+    "alt": "EXP SL Spicy Mountain Aroma — Amor Exotic bulk aroma oil",
+    "name": "EXP SL Spicy Mountain Aroma",
     "tagline": "Let desire linger in the air — alpine wind, crisp pine, and a kick of peppered spice.",
     "variants": [
       "15ML Luxury Pack",
@@ -378,8 +378,8 @@
   },
   {
     "img": "images/A30.webp",
-    "alt": "Marine Aroma — Amor Exotic bulk aroma oil",
-    "name": "Marine Aroma",
+    "alt": "IG Marine Aroma — Amor Exotic bulk aroma oil",
+    "name": "IG Marine Aroma",
     "tagline": "Let desire linger in the air — deep marine accord, sea spray, and breezy coastal clarity.",
     "variants": [
       "15ML Luxury Pack",
@@ -443,8 +443,8 @@
   },
   {
     "img": "images/A37.webp",
-    "alt": "Gingerbread Aroma — Amor Exotic bulk aroma oil",
-    "name": "Gingerbread Aroma",
+    "alt": "Ginger Bread Aroma — Amor Exotic bulk aroma oil",
+    "name": "Ginger Bread Aroma",
     "tagline": "Warm gingerbread spice — molasses, ginger snap, and holiday bakery comfort.",
     "variants": [
       "15ML Luxury Pack",
@@ -638,16 +638,16 @@
   },
   {
     "img": "images/A55.webp",
-    "alt": "Black Oudh Aroma — Amor Exotic bulk aroma oil",
+    "alt": "Black Oudh Aroma — 1 Ltr. Bulk Supply — Amor Exotic",
     "name": "Black Oudh Aroma",
-    "tagline": "Light me, love me, lose yourself — deep agarwood smoke, amber, and commanding oriental power.",
+    "tagline": "Wholesale 1 Ltr. Supply — concentrated agarwood extract formulated for refill and diffuser use.",
     "variants": [
-      "15ML Luxury Pack",
       "1 Ltr. Bulk Supply",
+      "5 Ltr. Drum",
       "Wholesale Bulk Pack"
     ],
-    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma",
-    "delay": "0.05s"
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma%201%20Ltr",
+    "delay": "0.08s"
   },
   {
     "img": "images/Floral%20fresh%20Aroma1.png",
@@ -713,5 +713,18 @@
     ],
     "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Aqua%20Aroma",
     "delay": "0.2s"
+  },
+  {
+    "img": "images/first.webp",
+    "alt": "Black Oudh Aroma — 15ML signature bottle — Amor Exotic",
+    "name": "Black Oudh Aroma",
+    "tagline": "Signature 15ML bottle — resinous agarwood, deep amber and smoked leather for a commanding oriental presence.",
+    "variants": [
+      "15ML Luxury Pack",
+      "1 Ltr. Bulk Supply",
+      "Wholesale Bulk Pack"
+    ],
+    "waText": "Hello%20I%20am%20interested%20in%20bulk%20order%20for%20Black%20Oudh%20Aroma%2015ML",
+    "delay": "0.05s"
   }
 ]
